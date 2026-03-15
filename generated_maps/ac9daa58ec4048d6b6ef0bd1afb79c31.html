@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c36c4cb4f59f289ba27933d3c58e99b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c36c4cb4f59f289ba27933d3c58e99b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c36c4cb4f59f289ba27933d3c58e99b2 = L.map(
+                "map_c36c4cb4f59f289ba27933d3c58e99b2",
+                {
+                    center: [11.1271, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "maxBounds": [
+[
+9.8,
+76.85,
+],
+[
+13.2,
+80.35,
+],
+],
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+
+            
+
+        
+    
+            var tile_layer_25710e6c917d36a1498ef5b2b55e06f8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25710e6c917d36a1498ef5b2b55e06f8.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+            map_c36c4cb4f59f289ba27933d3c58e99b2.fitBounds(
+                [[9.8, 76.85], [13.2, 80.35]],
+                {}
+            );
+        
+    
+        function geo_json_80d9bee95db58f9605af9da4d12ba3f2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#0f172a", "fillOpacity": 0.02, "weight": 3};
+            }
+        }
+
+        function geo_json_80d9bee95db58f9605af9da4d12ba3f2_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_80d9bee95db58f9605af9da4d12ba3f2 = L.geoJson(null, {
+                onEachFeature: geo_json_80d9bee95db58f9605af9da4d12ba3f2_onEachFeature,
+            
+                style: geo_json_80d9bee95db58f9605af9da4d12ba3f2_styler,
+            ...{
+}
+        });
+
+        function geo_json_80d9bee95db58f9605af9da4d12ba3f2_add (data) {
+            geo_json_80d9bee95db58f9605af9da4d12ba3f2
+                .addData(data);
+        }
+            geo_json_80d9bee95db58f9605af9da4d12ba3f2_add({"bbox": [76.85, 9.8, 80.35, 13.2], "features": [{"bbox": [76.85, 9.8, 80.35, 13.2], "geometry": {"coordinates": [[[[78.25, 10.05], [78.25, 9.8], [78.0, 9.8], [78.0, 10.05], [78.25, 10.05]]], [[[78.8, 10.9], [78.8, 10.68], [78.55, 10.68], [78.55, 10.9], [78.8, 10.9]]], [[[77.1, 11.12], [77.1, 10.9], [76.85, 10.9], [76.85, 11.12], [77.1, 11.12]]], [[[79.25, 12.8], [79.0, 12.8], [79.0, 13.02], [79.25, 13.02], [79.25, 12.8]]], [[[80.35, 12.95], [80.1, 12.95], [80.1, 13.2], [80.35, 13.2], [80.35, 12.95]]]], "type": "MultiPolygon"}, "id": "0", "properties": {"state": "Tamil Nadu"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_80d9bee95db58f9605af9da4d12ba3f2.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["state"];
+    let aliases = ["state"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_80d9bee95db58f9605af9da4d12ba3f2.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+        function geo_json_f549c73d7b20b66ce996e8cc9eca79c6_styler(feature) {
+            switch(feature.id) {
+                case "0": 
+                    return {"color": "#475569", "fillColor": "#fde68a", "fillOpacity": 0.35, "weight": 1};
+                default:
+                    return {"color": "#475569", "fillColor": "#e2e8f0", "fillOpacity": 0.35, "weight": 1};
+            }
+        }
+
+        function geo_json_f549c73d7b20b66ce996e8cc9eca79c6_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_f549c73d7b20b66ce996e8cc9eca79c6 = L.geoJson(null, {
+                onEachFeature: geo_json_f549c73d7b20b66ce996e8cc9eca79c6_onEachFeature,
+            
+                style: geo_json_f549c73d7b20b66ce996e8cc9eca79c6_styler,
+            ...{
+}
+        });
+
+        function geo_json_f549c73d7b20b66ce996e8cc9eca79c6_add (data) {
+            geo_json_f549c73d7b20b66ce996e8cc9eca79c6
+                .addData(data);
+        }
+            geo_json_f549c73d7b20b66ce996e8cc9eca79c6_add({"bbox": [76.85, 9.8, 80.35, 13.2], "features": [{"bbox": [80.1, 12.95, 80.35, 13.2], "geometry": {"coordinates": [[[80.1, 12.95], [80.35, 12.95], [80.35, 13.2], [80.1, 13.2], [80.1, 12.95]]], "type": "Polygon"}, "id": "0", "properties": {"area_sqkm": 795.1160619806387, "density_per_sqkm": 0.0013, "district": "Chennai", "record_count": 1}, "type": "Feature"}, {"bbox": [76.85, 10.9, 77.1, 11.12], "geometry": {"coordinates": [[[76.85, 10.9], [77.1, 10.9], [77.1, 11.12], [76.85, 11.12], [76.85, 10.9]]], "type": "Polygon"}, "id": "1", "properties": {"area_sqkm": 694.3422026592868, "density_per_sqkm": 0.0, "district": "Coimbatore", "record_count": 0}, "type": "Feature"}, {"bbox": [78.0, 9.8, 78.25, 10.05], "geometry": {"coordinates": [[[78.0, 9.8], [78.25, 9.8], [78.25, 10.05], [78.0, 10.05], [78.0, 9.8]]], "type": "Polygon"}, "id": "2", "properties": {"area_sqkm": 786.2696090009838, "density_per_sqkm": 0.0, "district": "Madurai", "record_count": 0}, "type": "Feature"}, {"bbox": [78.55, 10.68, 78.8, 10.9], "geometry": {"coordinates": [[[78.55, 10.68], [78.8, 10.68], [78.8, 10.9], [78.55, 10.9], [78.55, 10.68]]], "type": "Polygon"}, "id": "3", "properties": {"area_sqkm": 693.8289838627992, "density_per_sqkm": 0.0, "district": "Tiruchirappalli", "record_count": 0}, "type": "Feature"}, {"bbox": [79.0, 12.8, 79.25, 13.02], "geometry": {"coordinates": [[[79.0, 12.8], [79.25, 12.8], [79.25, 13.02], [79.0, 13.02], [79.0, 12.8]]], "type": "Polygon"}, "id": "4", "properties": {"area_sqkm": 699.237227776528, "density_per_sqkm": 0.0, "district": "Vellore", "record_count": 0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f549c73d7b20b66ce996e8cc9eca79c6.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["district", "record_count", "density_per_sqkm"];
+    let aliases = ["district", "record_count", "density_per_sqkm"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_f549c73d7b20b66ce996e8cc9eca79c6.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+            var marker_cluster_f014e39fb9947a1695312c5e34b0b3cf = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_4b79bf0b9faa687cf466fbe2a91a460e = L.circleMarker(
+                [13.0067, 80.2206],
+                {"bubblingMouseEvents": true, "color": "#1d4ed8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a5fa", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f014e39fb9947a1695312c5e34b0b3cf);
+        
+    
+        var popup_3132da6bbfd0b9a991b00d95aaea62eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fd1574536c12bd1d3bfa4396083bb51 = $(`<div id="html_8fd1574536c12bd1d3bfa4396083bb51" style="width: 100.0%; height: 100.0%;">Hospital A<br>hospital</div>`)[0];
+                popup_3132da6bbfd0b9a991b00d95aaea62eb.setContent(html_8fd1574536c12bd1d3bfa4396083bb51);
+            
+        
+
+        circle_marker_4b79bf0b9faa687cf466fbe2a91a460e.bindPopup(popup_3132da6bbfd0b9a991b00d95aaea62eb)
+        ;
+
+        
+    
+    
+            circle_marker_4b79bf0b9faa687cf466fbe2a91a460e.bindTooltip(
+                `<div>
+                     Hospital A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_f014e39fb9947a1695312c5e34b0b3cf.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+            var heat_map_960799d7ae91262de0e55911e7080ca3 = L.heatLayer(
+                [[13.006699999999999, 80.2206, 1.0]],
+                {
+  "minOpacity": 0.35,
+  "maxZoom": 11,
+  "radius": 24,
+  "blur": 18,
+}
+            );
+        
+    
+            heat_map_960799d7ae91262de0e55911e7080ca3.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+            var feature_group_8b58fdbed163af1c070042fc55eb53f7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_8b58fdbed163af1c070042fc55eb53f7.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+        function geo_json_1f864b87fb52594379f6b95376fb40d3_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#7c3aed", "fillOpacity": 0.05, "weight": 2};
+            }
+        }
+
+        function geo_json_1f864b87fb52594379f6b95376fb40d3_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_1f864b87fb52594379f6b95376fb40d3 = L.geoJson(null, {
+                onEachFeature: geo_json_1f864b87fb52594379f6b95376fb40d3_onEachFeature,
+            
+                style: geo_json_1f864b87fb52594379f6b95376fb40d3_styler,
+            ...{
+}
+        });
+
+        function geo_json_1f864b87fb52594379f6b95376fb40d3_add (data) {
+            geo_json_1f864b87fb52594379f6b95376fb40d3
+                .addData(data);
+        }
+            geo_json_1f864b87fb52594379f6b95376fb40d3_add({"bbox": [76.85, 9.8, 80.35, 13.2], "features": [{"bbox": [80.1, 12.95, 80.35, 13.2], "geometry": {"coordinates": [[[80.1, 12.95], [80.35, 12.95], [80.35, 13.2], [80.1, 13.2], [80.1, 12.95]]], "type": "Polygon"}, "id": "0", "properties": {"area_sqkm": 795.1160619806387, "density_per_sqkm": 0.0013, "district": "Chennai", "record_count": 1}, "type": "Feature"}, {"bbox": [76.85, 10.9, 77.1, 11.12], "geometry": {"coordinates": [[[76.85, 10.9], [77.1, 10.9], [77.1, 11.12], [76.85, 11.12], [76.85, 10.9]]], "type": "Polygon"}, "id": "1", "properties": {"area_sqkm": 694.3422026592868, "density_per_sqkm": 0.0, "district": "Coimbatore", "record_count": 0}, "type": "Feature"}, {"bbox": [78.0, 9.8, 78.25, 10.05], "geometry": {"coordinates": [[[78.0, 9.8], [78.25, 9.8], [78.25, 10.05], [78.0, 10.05], [78.0, 9.8]]], "type": "Polygon"}, "id": "2", "properties": {"area_sqkm": 786.2696090009838, "density_per_sqkm": 0.0, "district": "Madurai", "record_count": 0}, "type": "Feature"}, {"bbox": [78.55, 10.68, 78.8, 10.9], "geometry": {"coordinates": [[[78.55, 10.68], [78.8, 10.68], [78.8, 10.9], [78.55, 10.9], [78.55, 10.68]]], "type": "Polygon"}, "id": "3", "properties": {"area_sqkm": 693.8289838627992, "density_per_sqkm": 0.0, "district": "Tiruchirappalli", "record_count": 0}, "type": "Feature"}, {"bbox": [79.0, 12.8, 79.25, 13.02], "geometry": {"coordinates": [[[79.0, 12.8], [79.25, 12.8], [79.25, 13.02], [79.0, 13.02], [79.0, 12.8]]], "type": "Polygon"}, "id": "4", "properties": {"area_sqkm": 699.237227776528, "density_per_sqkm": 0.0, "district": "Vellore", "record_count": 0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_1f864b87fb52594379f6b95376fb40d3.addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+        
+    
+            var layer_control_3bcae156f6c6b72d72747f6e512c657e_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_25710e6c917d36a1498ef5b2b55e06f8,
+                },
+                overlays :  {
+                    "Tamil Nadu Boundary" : geo_json_80d9bee95db58f9605af9da4d12ba3f2,
+                    "District Boundaries" : geo_json_f549c73d7b20b66ce996e8cc9eca79c6,
+                    "Accident Points" : marker_cluster_f014e39fb9947a1695312c5e34b0b3cf,
+                    "Hotspot Heatmap" : heat_map_960799d7ae91262de0e55911e7080ca3,
+                    "Hotspot Clusters" : feature_group_8b58fdbed163af1c070042fc55eb53f7,
+                    "District Density Overlay" : geo_json_1f864b87fb52594379f6b95376fb40d3,
+                },
+            };
+            let layer_control_3bcae156f6c6b72d72747f6e512c657e = L.control.layers(
+                layer_control_3bcae156f6c6b72d72747f6e512c657e_layers.base_layers,
+                layer_control_3bcae156f6c6b72d72747f6e512c657e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_c36c4cb4f59f289ba27933d3c58e99b2);
+
+        
+</script>
+</html>

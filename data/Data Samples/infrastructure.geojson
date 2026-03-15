@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hospital A",
+        "category": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.2206, 13.0067]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "School B",
+        "category": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.146, 11.6643]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Industrial Zone C",
+        "category": "industrial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.8083, 11.9416]
+      }
+    }
+  ]
+}
