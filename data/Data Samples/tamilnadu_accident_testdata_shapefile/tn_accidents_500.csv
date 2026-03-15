@@ -1,0 +1,501 @@
+acc_id,acc_date,acc_time,district,severity,vehicles,roadtype,weather,lightcond,fatals,injuries,cause,lon,lat
+TNACC0001,2024-09-07,08:55,Kancheepuram,Minor,Van,Bypass,Clear,Daylight,0,0,Overspeeding,79.933466,13.024846
+TNACC0002,2025-07-28,08:50,Madurai,Major,Truck,State Hwy,Clear,Daylight,0,2,Overspeeding,78.137512,10.08713
+TNACC0003,2024-08-08,22:25,Tiruppur,Minor,Truck,National Hwy,Clear,Daylight,0,0,Drunk Driving,77.21269,11.176372
+TNACC0004,2025-01-22,06:20,Karur,Major,Auto,City Road,Clear,Night-Lit,0,3,Overspeeding,77.992053,10.983541
+TNACC0005,2025-01-24,09:50,Chennai,Major,Car,City Road,Clear,Night-Lit,0,2,Distracted Driving,80.418674,12.892717
+TNACC0006,2025-01-23,09:50,Thanjavur,Major,Car,Junction,Clear,Night-Unlit,0,1,Overspeeding,79.125939,10.680101
+TNACC0007,2024-08-04,21:45,Krishnagiri,Major,Bus,State Hwy,Clear,Daylight,0,2,Brake Failure,78.156893,12.656854
+TNACC0008,2025-08-21,13:45,Madurai,Minor,Car,State Hwy,Clear,Daylight,0,0,Overspeeding,78.115099,9.775942
+TNACC0009,2025-03-08,16:30,Coimbatore,Minor,Truck,Bypass,Clear,Night-Lit,0,2,Overspeeding,76.807741,10.864118
+TNACC0010,2024-09-30,18:25,Tiruppur,Minor,Truck,State Hwy,Clear,Dawn/Dusk,0,2,Drunk Driving,77.622494,11.355177
+TNACC0011,2025-10-02,10:50,Namakkal,Minor,Car,State Hwy,Clear,Daylight,0,0,Animal Crossing,78.33996,11.577564
+TNACC0012,2025-01-06,20:20,Dindigul,Minor,Car,Bypass,Cloudy,Daylight,0,0,Brake Failure,77.964261,10.399195
+TNACC0013,2024-05-11,17:40,Dharmapuri,Minor,Auto,Bypass,Clear,Daylight,0,2,Animal Crossing,78.177417,11.821669
+TNACC0014,2025-11-18,17:35,Tiruppur,Major,Truck,National Hwy,Clear,Daylight,0,2,Overspeeding,77.388107,11.256813
+TNACC0015,2025-10-08,05:05,Thoothukudi,Fatal,Bicycle,City Road,Clear,Daylight,2,1,Brake Failure,78.147651,8.832072
+TNACC0016,2025-04-29,09:35,Tiruppur,Major,Car,National Hwy,Clear,Daylight,0,1,Pedestrian Crossing,77.556332,11.016185
+TNACC0017,2024-03-03,12:25,Cuddalore,Major,Two Wheeler,State Hwy,Clear,Night-Lit,0,3,Wrong Turn,79.61878,11.536822
+TNACC0018,2025-03-29,19:40,Erode,Minor,Van,Bypass,Rain,Dawn/Dusk,0,0,Lane Change,77.717696,11.748882
+TNACC0019,2025-02-14,21:10,Tirunelveli,Minor,Truck,City Road,Cloudy,Night-Unlit,0,1,Drunk Driving,77.570276,8.725147
+TNACC0020,2025-07-23,17:35,Tiruppur,Minor,Bus,State Hwy,Fog,Night-Lit,0,0,Animal Crossing,77.91079,10.951949
+TNACC0021,2025-05-03,14:40,Karur,Minor,Auto,National Hwy,Rain,Daylight,0,2,Distracted Driving,78.059535,11.013287
+TNACC0022,2025-08-06,09:45,Nagapattinam,Minor,Two Wheeler,Village Road,Clear,Night-Lit,0,1,Poor Visibility,79.853345,10.857276
+TNACC0023,2024-09-28,12:50,Coimbatore,Major,Truck,City Road,Cloudy,Dawn/Dusk,0,5,Overspeeding,76.905434,10.925558
+TNACC0024,2025-01-13,10:35,Chennai,Major,Van,City Road,Clear,Dawn/Dusk,0,5,Animal Crossing,80.451493,12.914762
+TNACC0025,2024-05-17,09:05,Tiruchirappalli,Major,Car,City Road,Clear,Daylight,0,3,Poor Visibility,78.755739,10.767167
+TNACC0026,2024-02-22,06:30,Vellore,Major,Two Wheeler,National Hwy,Clear,Daylight,0,4,Drunk Driving,78.743467,12.944639
+TNACC0027,2024-04-24,06:55,Thanjavur,Fatal,Auto,National Hwy,Rain,Night-Lit,4,1,Wrong Turn,79.0765,10.564662
+TNACC0028,2025-01-01,08:15,Chennai,Major,Bus,Bypass,Cloudy,Daylight,0,2,Road Damage,80.338785,12.854373
+TNACC0029,2024-06-30,20:00,Nagapattinam,Minor,Bus,Village Road,Rain,Night-Unlit,0,1,Lane Change,80.013604,11.042007
+TNACC0030,2024-02-09,20:15,Coimbatore,Minor,Truck,City Road,Clear,Night-Unlit,0,0,Lane Change,76.969155,10.960977
+TNACC0031,2024-10-12,20:20,Chennai,Minor,Auto,Village Road,Clear,Night-Unlit,0,0,Poor Visibility,80.205892,12.980532
+TNACC0032,2025-08-17,22:20,Chennai,Minor,Auto,Village Road,Clear,Night-Unlit,0,2,Pedestrian Crossing,80.337567,13.017524
+TNACC0033,2024-07-13,09:55,Vellore,Minor,Auto,Bypass,Rain,Dawn/Dusk,0,1,Lane Change,79.4217,13.172846
+TNACC0034,2024-12-04,16:50,Tirunelveli,Major,Van,City Road,Clear,Night-Lit,0,3,Poor Visibility,77.935241,8.827089
+TNACC0035,2025-01-23,17:10,Thanjavur,Major,Bus,Village Road,Clear,Daylight,0,5,Drunk Driving,79.271019,10.921541
+TNACC0036,2025-03-28,17:40,Dindigul,Minor,Bicycle,Junction,Clear,Daylight,0,2,Animal Crossing,77.866833,10.201001
+TNACC0037,2024-08-28,17:15,Kancheepuram,Major,Car,National Hwy,Clear,Dawn/Dusk,0,1,Road Damage,79.648544,12.779908
+TNACC0038,2024-07-18,18:30,Erode,Minor,Car,State Hwy,Clear,Daylight,0,1,Distracted Driving,77.499246,11.470933
+TNACC0039,2025-06-14,14:40,Madurai,Minor,Bicycle,National Hwy,Clear,Night-Unlit,0,2,Animal Crossing,78.255457,10.195149
+TNACC0040,2025-03-29,16:55,Dindigul,Major,Truck,Bypass,Clear,Daylight,0,2,Brake Failure,77.85637,10.642706
+TNACC0041,2025-06-17,14:15,Villupuram,Minor,Two Wheeler,Junction,Clear,Daylight,0,2,Poor Visibility,79.28715,11.70668
+TNACC0042,2024-03-06,12:25,Chennai,Minor,Truck,National Hwy,Clear,Daylight,0,2,Road Damage,80.205894,12.906355
+TNACC0043,2025-01-24,14:25,Chennai,Minor,Truck,Village Road,Clear,Night-Lit,0,0,Road Damage,80.39773,12.922564
+TNACC0044,2024-01-30,12:50,Vellore,Major,Truck,Junction,Clear,Daylight,1,5,Wrong Turn,79.170076,13.10555
+TNACC0045,2025-11-09,01:50,Chennai,Minor,Bicycle,Village Road,Clear,Daylight,0,0,Poor Visibility,80.404663,12.994013
+TNACC0046,2025-01-23,09:30,Erode,Minor,Two Wheeler,Village Road,Clear,Night-Lit,0,0,Poor Visibility,77.575754,11.610821
+TNACC0047,2024-02-11,18:15,Kancheepuram,Minor,Two Wheeler,Bypass,Clear,Daylight,0,2,Distracted Driving,80.117562,13.023106
+TNACC0048,2025-01-12,08:45,Theni,Fatal,Van,National Hwy,Rain,Daylight,1,0,Drunk Driving,77.530002,10.283874
+TNACC0049,2025-01-19,12:55,Ramanathapuram,Minor,Auto,Junction,Rain,Daylight,0,2,Drunk Driving,78.752546,9.622083
+TNACC0050,2025-08-02,19:25,Dindigul,Minor,Van,City Road,Clear,Night-Lit,0,1,Overspeeding,78.090057,10.065582
+TNACC0051,2025-01-05,17:35,Villupuram,Major,Truck,State Hwy,Rain,Dawn/Dusk,0,5,Drunk Driving,79.29456,11.951907
+TNACC0052,2025-08-29,09:15,Namakkal,Major,Two Wheeler,City Road,Cloudy,Daylight,0,4,Brake Failure,77.976219,11.239326
+TNACC0053,2024-07-05,14:25,Salem,Major,Bus,City Road,Cloudy,Night-Lit,0,5,Drunk Driving,78.491512,11.72729
+TNACC0054,2025-02-20,14:15,Theni,Major,Van,Junction,Clear,Night-Unlit,0,4,Distracted Driving,77.522624,10.135117
+TNACC0055,2025-01-12,14:40,Tiruppur,Minor,Van,Bypass,Clear,Night-Lit,0,1,Drunk Driving,77.352279,11.374096
+TNACC0056,2024-11-19,07:40,Madurai,Fatal,Van,State Hwy,Clear,Night-Lit,3,0,Drunk Driving,78.143198,10.115585
+TNACC0057,2024-07-02,10:55,Villupuram,Minor,Bus,National Hwy,Fog,Night-Lit,0,2,Wrong Turn,79.530581,12.061535
+TNACC0058,2024-10-31,20:30,Kanyakumari,Minor,Auto,National Hwy,Clear,Night-Lit,0,2,Lane Change,77.250896,8.357095
+TNACC0059,2024-09-02,08:05,Madurai,Minor,Truck,Village Road,Rain,Daylight,0,0,Overspeeding,78.115262,9.974373
+TNACC0060,2025-04-09,05:15,Tiruchirappalli,Fatal,Bicycle,Junction,Clear,Night-Unlit,4,0,Lane Change,78.654744,10.610314
+TNACC0061,2024-09-29,19:05,Thanjavur,Minor,Bicycle,City Road,Clear,Night-Unlit,0,1,Drunk Driving,79.156116,10.887668
+TNACC0062,2025-02-16,22:40,Chennai,Minor,Truck,National Hwy,Clear,Night-Unlit,0,2,Poor Visibility,80.170488,13.102667
+TNACC0063,2025-11-21,19:45,Madurai,Minor,Two Wheeler,Junction,Rain,Night-Lit,0,1,Wrong Turn,78.205188,9.9392
+TNACC0064,2024-07-04,23:30,Vellore,Major,Truck,National Hwy,Clear,Daylight,0,2,Poor Visibility,78.900859,12.590106
+TNACC0065,2025-11-09,22:40,Tiruchirappalli,Minor,Two Wheeler,City Road,Clear,Daylight,0,2,Pedestrian Crossing,78.585413,10.864483
+TNACC0066,2025-07-09,13:00,Villupuram,Minor,Bus,Bypass,Rain,Night-Lit,0,0,Overspeeding,79.748923,11.920444
+TNACC0067,2025-03-24,20:35,Madurai,Minor,Van,Bypass,Rain,Night-Lit,0,2,Drunk Driving,77.857812,9.841493
+TNACC0068,2024-04-26,13:05,Chennai,Major,Car,Village Road,Cloudy,Daylight,0,4,Drunk Driving,80.220451,13.065584
+TNACC0069,2025-01-27,08:45,Erode,Minor,Car,National Hwy,Clear,Night-Unlit,0,1,Pedestrian Crossing,77.726174,11.568695
+TNACC0070,2024-01-03,10:20,Ramanathapuram,Major,Auto,Junction,Clear,Daylight,0,3,Animal Crossing,78.88862,9.233642
+TNACC0071,2024-11-25,20:55,Thanjavur,Minor,Truck,State Hwy,Rain,Daylight,0,2,Poor Visibility,79.154153,10.612099
+TNACC0072,2025-01-30,23:50,Erode,Fatal,Truck,National Hwy,Clear,Dawn/Dusk,1,3,Poor Visibility,77.625925,11.025142
+TNACC0073,2024-05-27,12:50,Chennai,Fatal,Two Wheeler,Village Road,Rain,Daylight,4,0,Road Damage,80.139859,13.061175
+TNACC0074,2025-06-30,12:25,Nagapattinam,Major,Bicycle,Village Road,Cloudy,Daylight,0,3,Distracted Driving,79.717137,11.004144
+TNACC0075,2024-04-10,18:55,Madurai,Major,Truck,State Hwy,Rain,Night-Unlit,0,1,Overspeeding,78.117199,9.797201
+TNACC0076,2024-09-07,15:45,Tiruchirappalli,Major,Car,State Hwy,Clear,Night-Lit,0,2,Pedestrian Crossing,78.624461,10.889421
+TNACC0077,2025-04-17,17:35,Vellore,Minor,Two Wheeler,Village Road,Cloudy,Night-Lit,0,0,Wrong Turn,79.218709,12.864404
+TNACC0078,2024-11-02,17:30,Erode,Major,Truck,City Road,Clear,Daylight,0,4,Brake Failure,78.219537,11.160987
+TNACC0079,2025-12-17,10:50,Thoothukudi,Minor,Two Wheeler,Bypass,Cloudy,Night-Unlit,0,2,Overspeeding,78.039457,8.880996
+TNACC0080,2024-10-20,19:15,Karur,Major,Bus,State Hwy,Clear,Night-Lit,0,1,Wrong Turn,77.692265,10.968115
+TNACC0081,2025-01-08,18:05,Tiruchirappalli,Fatal,Bus,Junction,Clear,Daylight,3,2,Animal Crossing,78.71221,10.760154
+TNACC0082,2025-05-08,22:20,Villupuram,Major,Bus,National Hwy,Clear,Daylight,1,4,Lane Change,79.690072,12.282756
+TNACC0083,2024-04-02,19:00,Dharmapuri,Minor,Two Wheeler,Village Road,Clear,Night-Lit,0,2,Drunk Driving,78.287051,11.938249
+TNACC0084,2024-04-20,17:35,Salem,Minor,Auto,City Road,Cloudy,Daylight,0,2,Distracted Driving,78.333807,11.280433
+TNACC0085,2025-10-26,12:10,Villupuram,Minor,Two Wheeler,City Road,Fog,Daylight,0,2,Lane Change,79.213388,12.002378
+TNACC0086,2025-12-14,22:30,Coimbatore,Minor,Van,State Hwy,Cloudy,Night-Lit,0,2,Brake Failure,76.867393,11.091212
+TNACC0087,2025-12-07,11:35,Tirunelveli,Minor,Car,City Road,Clear,Night-Lit,0,2,Animal Crossing,77.829859,8.659414
+TNACC0088,2024-05-05,22:35,Salem,Minor,Car,Junction,Clear,Dawn/Dusk,0,1,Overspeeding,78.280288,11.718006
+TNACC0089,2024-07-29,05:40,Madurai,Minor,Car,State Hwy,Clear,Daylight,0,0,Road Damage,78.330313,9.910389
+TNACC0090,2024-05-13,15:10,Tiruchirappalli,Minor,Bicycle,National Hwy,Clear,Daylight,0,2,Lane Change,78.746945,10.73838
+TNACC0091,2024-05-09,18:40,Tiruchirappalli,Minor,Two Wheeler,Village Road,Clear,Daylight,0,0,Road Damage,78.798479,10.799829
+TNACC0092,2024-02-14,18:50,Erode,Minor,Truck,Junction,Fog,Daylight,0,1,Brake Failure,77.283231,11.330531
+TNACC0093,2025-03-30,06:05,Tirunelveli,Minor,Car,National Hwy,Clear,Night-Lit,0,2,Road Damage,77.612934,8.521553
+TNACC0094,2025-06-27,10:40,Tiruppur,Major,Two Wheeler,Junction,Clear,Night-Lit,0,2,Animal Crossing,77.076292,11.626722
+TNACC0095,2024-12-13,19:30,Tirunelveli,Minor,Two Wheeler,City Road,Clear,Night-Lit,0,0,Poor Visibility,77.570908,8.752758
+TNACC0096,2024-03-28,06:05,Cuddalore,Major,Bus,State Hwy,Clear,Night-Lit,0,1,Animal Crossing,79.826101,11.71878
+TNACC0097,2025-03-09,20:55,Tirunelveli,Minor,Bus,Bypass,Clear,Daylight,0,0,Animal Crossing,77.533223,8.925773
+TNACC0098,2024-04-20,11:40,Coimbatore,Minor,Bicycle,City Road,Clear,Night-Unlit,0,2,Animal Crossing,76.908508,10.945552
+TNACC0099,2025-09-15,21:55,Dindigul,Minor,Car,City Road,Rain,Daylight,0,1,Poor Visibility,77.876029,10.16273
+TNACC0100,2025-10-10,22:05,Chennai,Major,Car,Village Road,Clear,Daylight,0,3,Poor Visibility,80.24564,13.044631
+TNACC0101,2024-02-23,07:45,Namakkal,Minor,Two Wheeler,City Road,Clear,Daylight,0,1,Road Damage,78.393875,11.132156
+TNACC0102,2024-04-26,11:05,Tirunelveli,Minor,Van,Bypass,Clear,Night-Lit,0,0,Overspeeding,77.650814,9.012578
+TNACC0103,2024-07-28,10:15,Tirunelveli,Major,Bicycle,City Road,Clear,Daylight,0,2,Brake Failure,77.754734,8.708004
+TNACC0104,2025-05-27,15:50,Coimbatore,Major,Two Wheeler,Village Road,Cloudy,Daylight,0,1,Overspeeding,76.819199,11.144742
+TNACC0105,2025-02-18,18:30,Nagapattinam,Minor,Truck,National Hwy,Fog,Daylight,0,1,Road Damage,79.771325,10.942571
+TNACC0106,2025-03-23,20:15,Villupuram,Minor,Truck,Bypass,Clear,Night-Unlit,0,0,Poor Visibility,79.422906,11.781627
+TNACC0107,2025-10-10,07:40,Tiruchirappalli,Minor,Bicycle,City Road,Clear,Dawn/Dusk,0,0,Wrong Turn,78.713403,10.743462
+TNACC0108,2025-11-02,06:50,Chennai,Minor,Bicycle,Bypass,Rain,Daylight,0,2,Road Damage,80.108449,12.961039
+TNACC0109,2025-10-04,10:35,Kancheepuram,Minor,Truck,Junction,Clear,Daylight,0,1,Overspeeding,79.865382,12.820757
+TNACC0110,2024-02-08,05:20,Vellore,Minor,Bicycle,National Hwy,Clear,Daylight,0,2,Brake Failure,79.312269,13.006546
+TNACC0111,2024-02-12,13:45,Thanjavur,Major,Bus,Bypass,Clear,Daylight,0,3,Overspeeding,79.422881,10.703032
+TNACC0112,2024-02-10,09:35,Tiruppur,Fatal,Auto,Bypass,Clear,Daylight,4,3,Drunk Driving,77.564976,11.239629
+TNACC0113,2025-10-08,17:05,Namakkal,Minor,Auto,Junction,Clear,Daylight,0,0,Road Damage,78.039622,11.425871
+TNACC0114,2024-12-24,10:50,Tiruchirappalli,Major,Truck,State Hwy,Clear,Dawn/Dusk,0,3,Drunk Driving,78.859114,10.877297
+TNACC0115,2025-12-02,21:05,Villupuram,Major,Truck,Bypass,Clear,Daylight,1,3,Wrong Turn,79.680871,12.141832
+TNACC0116,2024-05-20,07:20,Theni,Major,Two Wheeler,Bypass,Rain,Night-Unlit,0,3,Animal Crossing,77.486111,9.893466
+TNACC0117,2025-01-15,15:05,Kanyakumari,Major,Auto,National Hwy,Clear,Night-Unlit,0,5,Drunk Driving,77.538495,8.346012
+TNACC0118,2024-08-15,19:25,Coimbatore,Fatal,Truck,National Hwy,Clear,Daylight,1,2,Pedestrian Crossing,76.98146,10.970843
+TNACC0119,2025-10-27,11:10,Madurai,Minor,Bus,Village Road,Rain,Daylight,0,1,Brake Failure,78.392821,9.974066
+TNACC0120,2024-09-19,08:10,Dindigul,Minor,Van,Bypass,Clear,Daylight,0,0,Drunk Driving,78.053394,10.369713
+TNACC0121,2025-10-16,19:35,Tiruchirappalli,Minor,Bicycle,Village Road,Clear,Daylight,0,2,Animal Crossing,78.768557,10.851876
+TNACC0122,2024-01-02,16:15,Madurai,Minor,Car,Junction,Clear,Night-Lit,0,0,Poor Visibility,78.100248,9.827563
+TNACC0123,2025-06-03,15:30,Theni,Major,Two Wheeler,Junction,Clear,Daylight,0,1,Overspeeding,77.262886,9.975488
+TNACC0124,2024-04-16,18:55,Salem,Major,Car,National Hwy,Clear,Daylight,0,4,Wrong Turn,78.160677,11.927249
+TNACC0125,2024-05-18,05:35,Tiruppur,Minor,Car,National Hwy,Rain,Night-Unlit,0,1,Poor Visibility,77.227945,11.123857
+TNACC0126,2025-04-29,09:50,Vellore,Minor,Bus,National Hwy,Cloudy,Daylight,0,1,Distracted Driving,78.867794,13.113965
+TNACC0127,2025-01-30,11:10,Tirunelveli,Minor,Truck,City Road,Cloudy,Daylight,0,2,Distracted Driving,77.922715,8.523944
+TNACC0128,2024-07-03,15:25,Tirunelveli,Minor,Bus,Junction,Clear,Daylight,0,0,Pedestrian Crossing,77.909636,8.830236
+TNACC0129,2024-12-27,16:30,Tiruppur,Minor,Bicycle,National Hwy,Clear,Night-Lit,0,2,Poor Visibility,77.157179,11.176144
+TNACC0130,2024-02-01,07:45,Krishnagiri,Major,Truck,National Hwy,Clear,Daylight,0,5,Poor Visibility,78.213632,12.420312
+TNACC0131,2025-01-14,11:05,Chennai,Minor,Auto,City Road,Clear,Night-Lit,0,0,Lane Change,80.127813,12.971729
+TNACC0132,2025-01-31,21:05,Chennai,Minor,Bus,Junction,Clear,Dawn/Dusk,0,2,Drunk Driving,80.258018,12.942177
+TNACC0133,2024-05-18,20:35,Ramanathapuram,Minor,Van,Village Road,Fog,Night-Unlit,0,2,Poor Visibility,78.975604,9.370564
+TNACC0134,2024-10-24,21:10,Salem,Major,Van,Junction,Clear,Daylight,0,2,Lane Change,78.088794,11.44414
+TNACC0135,2024-01-27,11:45,Krishnagiri,Minor,Bicycle,Bypass,Clear,Night-Unlit,0,1,Distracted Driving,78.418247,12.770333
+TNACC0136,2025-06-22,12:30,Tirunelveli,Major,Two Wheeler,State Hwy,Fog,Night-Lit,0,5,Brake Failure,77.981352,8.71317
+TNACC0137,2025-07-18,17:10,Salem,Major,Car,Village Road,Clear,Night-Unlit,0,3,Distracted Driving,78.380167,11.908491
+TNACC0138,2024-08-18,11:40,Coimbatore,Major,Bicycle,National Hwy,Clear,Night-Lit,0,3,Animal Crossing,77.103091,11.255359
+TNACC0139,2024-06-21,16:45,Dindigul,Minor,Van,Bypass,Rain,Night-Lit,0,0,Road Damage,77.772268,10.322884
+TNACC0140,2025-10-18,18:20,Villupuram,Major,Bicycle,Bypass,Clear,Night-Lit,1,5,Brake Failure,79.53467,11.884151
+TNACC0141,2024-09-07,19:50,Tiruchirappalli,Minor,Truck,National Hwy,Rain,Daylight,0,1,Pedestrian Crossing,78.640769,10.711308
+TNACC0142,2024-11-16,20:25,Erode,Major,Bicycle,City Road,Fog,Daylight,0,1,Poor Visibility,77.78725,11.576705
+TNACC0143,2025-04-05,09:05,Tiruchirappalli,Minor,Truck,Bypass,Clear,Dawn/Dusk,0,1,Wrong Turn,78.707884,10.851771
+TNACC0144,2024-06-12,14:40,Ramanathapuram,Minor,Bus,Village Road,Clear,Dawn/Dusk,0,1,Animal Crossing,78.717619,9.298495
+TNACC0145,2024-02-19,04:35,Dharmapuri,Minor,Bicycle,Junction,Clear,Daylight,0,0,Overspeeding,78.170867,12.365481
+TNACC0146,2025-01-09,18:25,Tirunelveli,Minor,Two Wheeler,Bypass,Clear,Daylight,0,0,Drunk Driving,77.788606,8.819101
+TNACC0147,2024-10-13,19:45,Salem,Major,Two Wheeler,State Hwy,Fog,Daylight,0,3,Poor Visibility,77.840042,11.656117
+TNACC0148,2025-02-15,14:00,Namakkal,Minor,Van,City Road,Rain,Daylight,0,2,Wrong Turn,78.318438,11.411894
+TNACC0149,2025-09-19,10:30,Sivaganga,Fatal,Van,City Road,Clear,Daylight,4,2,Animal Crossing,78.323879,9.83139
+TNACC0150,2025-11-20,07:30,Erode,Minor,Bicycle,Junction,Cloudy,Night-Lit,0,1,Road Damage,77.78647,11.182972
+TNACC0151,2025-08-15,16:55,Madurai,Minor,Truck,State Hwy,Clear,Night-Lit,0,0,Pedestrian Crossing,78.325064,9.882114
+TNACC0152,2025-12-18,07:00,Villupuram,Minor,Truck,State Hwy,Clear,Daylight,0,2,Animal Crossing,79.466876,11.898758
+TNACC0153,2024-03-04,18:40,Ramanathapuram,Minor,Bus,Junction,Clear,Daylight,0,1,Wrong Turn,78.511227,9.433645
+TNACC0154,2025-11-23,18:55,Sivaganga,Major,Bicycle,Junction,Clear,Daylight,0,3,Lane Change,78.262191,9.800238
+TNACC0155,2024-10-22,18:55,Madurai,Major,Bus,Village Road,Clear,Dawn/Dusk,0,5,Drunk Driving,78.437791,9.802719
+TNACC0156,2025-02-08,19:10,Cuddalore,Minor,Bus,Junction,Clear,Dawn/Dusk,0,2,Drunk Driving,79.397933,11.647394
+TNACC0157,2024-10-04,21:55,Erode,Minor,Two Wheeler,Bypass,Rain,Daylight,0,2,Overspeeding,77.792965,11.670099
+TNACC0158,2024-02-23,06:25,Sivaganga,Major,Two Wheeler,Junction,Rain,Daylight,1,2,Animal Crossing,78.231883,9.797273
+TNACC0159,2025-05-02,14:15,Tirunelveli,Major,Bus,City Road,Clear,Daylight,0,2,Distracted Driving,77.481944,8.409728
+TNACC0160,2024-02-08,21:10,Thanjavur,Minor,Bicycle,State Hwy,Cloudy,Daylight,0,1,Pedestrian Crossing,79.115083,10.436762
+TNACC0161,2024-10-23,20:00,Coimbatore,Minor,Auto,National Hwy,Cloudy,Daylight,0,2,Brake Failure,77.238816,10.89771
+TNACC0162,2024-05-17,20:35,Thanjavur,Minor,Bicycle,National Hwy,Clear,Night-Lit,0,2,Drunk Driving,78.76678,10.729225
+TNACC0163,2024-10-29,16:15,Coimbatore,Minor,Bicycle,Junction,Cloudy,Night-Unlit,0,1,Animal Crossing,77.064191,11.026417
+TNACC0164,2024-05-23,14:15,Chennai,Minor,Truck,State Hwy,Clear,Daylight,0,1,Poor Visibility,80.227065,13.114055
+TNACC0165,2025-10-31,11:15,Thoothukudi,Minor,Two Wheeler,Village Road,Clear,Daylight,0,2,Animal Crossing,78.130171,8.737295
+TNACC0166,2024-10-29,11:15,Namakkal,Minor,Car,Village Road,Clear,Night-Lit,0,1,Road Damage,78.134069,11.302842
+TNACC0167,2024-03-24,15:40,Tirunelveli,Major,Two Wheeler,Bypass,Clear,Night-Unlit,0,5,Animal Crossing,77.591912,8.494455
+TNACC0168,2025-03-28,07:15,Coimbatore,Major,Truck,National Hwy,Cloudy,Daylight,0,5,Overspeeding,77.076324,11.219249
+TNACC0169,2025-04-18,17:20,Tirunelveli,Major,Truck,City Road,Rain,Night-Lit,0,4,Road Damage,77.634795,8.730545
+TNACC0170,2024-03-02,21:05,Salem,Fatal,Truck,National Hwy,Clear,Daylight,4,2,Wrong Turn,78.077086,11.450445
+TNACC0171,2025-01-21,12:50,Kanyakumari,Fatal,Bicycle,Bypass,Clear,Night-Unlit,2,3,Distracted Driving,77.269792,8.332868
+TNACC0172,2024-01-04,18:20,Thanjavur,Minor,Van,Bypass,Clear,Daylight,0,0,Lane Change,79.487948,11.145064
+TNACC0173,2024-04-25,02:50,Erode,Minor,Bicycle,National Hwy,Clear,Daylight,0,0,Road Damage,77.635078,11.459965
+TNACC0174,2024-02-19,09:00,Erode,Minor,Car,Bypass,Clear,Night-Unlit,0,0,Overspeeding,77.487924,11.179248
+TNACC0175,2025-08-12,10:45,Vellore,Major,Bicycle,City Road,Clear,Night-Unlit,0,3,Animal Crossing,79.264672,12.911118
+TNACC0176,2024-06-28,16:30,Tiruchirappalli,Minor,Two Wheeler,City Road,Cloudy,Night-Lit,0,1,Animal Crossing,78.975818,10.899735
+TNACC0177,2025-01-20,08:40,Tiruppur,Minor,Bicycle,State Hwy,Clear,Night-Lit,0,0,Brake Failure,77.252589,11.159856
+TNACC0178,2025-06-26,07:15,Thoothukudi,Minor,Bus,Junction,Clear,Daylight,0,0,Poor Visibility,77.975384,8.861646
+TNACC0179,2024-10-01,12:45,Thanjavur,Major,Bicycle,National Hwy,Clear,Night-Unlit,0,2,Animal Crossing,79.121393,10.671171
+TNACC0180,2025-04-22,06:55,Kanyakumari,Minor,Bicycle,City Road,Cloudy,Daylight,0,0,Pedestrian Crossing,77.301553,8.376025
+TNACC0181,2025-08-21,16:30,Thoothukudi,Minor,Car,City Road,Clear,Night-Lit,0,1,Lane Change,78.362135,8.787449
+TNACC0182,2024-09-20,18:35,Thanjavur,Fatal,Van,Junction,Clear,Daylight,2,1,Poor Visibility,78.985691,10.56084
+TNACC0183,2025-07-09,23:00,Tiruppur,Minor,Bicycle,National Hwy,Cloudy,Night-Lit,0,1,Overspeeding,77.231169,11.075401
+TNACC0184,2025-12-25,07:15,Coimbatore,Minor,Bus,National Hwy,Clear,Night-Lit,0,1,Road Damage,77.003623,10.944041
+TNACC0185,2025-07-18,12:00,Kancheepuram,Minor,Bus,Bypass,Fog,Daylight,0,0,Pedestrian Crossing,79.686226,12.835781
+TNACC0186,2024-09-03,08:40,Chennai,Minor,Bus,City Road,Rain,Daylight,0,1,Pedestrian Crossing,80.398027,13.010655
+TNACC0187,2024-11-03,17:05,Thoothukudi,Major,Bicycle,Junction,Rain,Daylight,0,4,Pedestrian Crossing,78.146671,9.042197
+TNACC0188,2024-03-25,14:30,Chennai,Major,Bus,Bypass,Fog,Dawn/Dusk,1,2,Animal Crossing,80.148618,12.94112
+TNACC0189,2025-08-03,14:00,Madurai,Fatal,Van,City Road,Cloudy,Night-Lit,2,2,Overspeeding,78.269712,9.818104
+TNACC0190,2025-02-11,21:20,Chennai,Minor,Car,Bypass,Rain,Daylight,0,1,Animal Crossing,80.273385,12.89319
+TNACC0191,2025-12-06,18:40,Salem,Major,Bus,National Hwy,Clear,Daylight,0,5,Distracted Driving,78.149483,11.56552
+TNACC0192,2024-11-30,02:20,Theni,Major,Truck,Village Road,Clear,Night-Lit,0,5,Pedestrian Crossing,77.082961,9.742321
+TNACC0193,2024-10-29,19:55,Cuddalore,Minor,Bus,State Hwy,Clear,Night-Unlit,0,2,Wrong Turn,79.540919,11.961829
+TNACC0194,2024-01-06,22:35,Salem,Minor,Bus,National Hwy,Clear,Daylight,0,2,Brake Failure,78.111241,11.742355
+TNACC0195,2024-04-01,11:05,Thanjavur,Minor,Bicycle,City Road,Cloudy,Daylight,0,1,Pedestrian Crossing,79.056204,10.780136
+TNACC0196,2024-09-05,16:10,Namakkal,Major,Car,State Hwy,Clear,Daylight,0,4,Wrong Turn,78.501378,11.415887
+TNACC0197,2024-03-19,11:15,Tiruchirappalli,Major,Truck,Bypass,Clear,Daylight,0,4,Wrong Turn,78.583234,10.856185
+TNACC0198,2024-12-03,13:30,Tiruchirappalli,Major,Bicycle,Junction,Fog,Daylight,0,2,Poor Visibility,78.76856,10.692092
+TNACC0199,2024-11-22,10:55,Erode,Major,Auto,State Hwy,Clear,Daylight,0,5,Pedestrian Crossing,77.534622,11.768924
+TNACC0200,2025-11-29,18:00,Coimbatore,Fatal,Truck,Junction,Clear,Night-Unlit,4,3,Distracted Driving,76.82968,10.934264
+TNACC0201,2025-11-05,07:30,Coimbatore,Major,Two Wheeler,Village Road,Fog,Daylight,0,4,Pedestrian Crossing,76.896025,10.950411
+TNACC0202,2025-12-19,21:40,Thanjavur,Minor,Two Wheeler,National Hwy,Rain,Night-Lit,0,0,Poor Visibility,79.600628,10.89504
+TNACC0203,2025-10-22,17:30,Kancheepuram,Fatal,Bus,Village Road,Clear,Daylight,2,3,Lane Change,79.530898,12.683539
+TNACC0204,2025-08-25,17:10,Salem,Minor,Two Wheeler,Village Road,Clear,Daylight,0,0,Distracted Driving,77.905991,11.859989
+TNACC0205,2024-11-15,11:15,Villupuram,Minor,Bus,Village Road,Clear,Night-Lit,0,1,Brake Failure,79.578765,11.903866
+TNACC0206,2024-06-17,21:55,Chennai,Minor,Car,Bypass,Clear,Night-Lit,0,0,Brake Failure,80.162785,12.938084
+TNACC0207,2025-10-17,17:30,Krishnagiri,Minor,Auto,State Hwy,Clear,Daylight,0,2,Overspeeding,78.118612,12.59118
+TNACC0208,2024-03-05,16:40,Madurai,Minor,Bus,State Hwy,Clear,Daylight,0,2,Brake Failure,78.174784,10.117998
+TNACC0209,2025-09-17,12:05,Dharmapuri,Minor,Bicycle,Village Road,Clear,Night-Unlit,0,2,Drunk Driving,78.001274,11.941592
+TNACC0210,2024-04-30,09:05,Thoothukudi,Minor,Van,State Hwy,Clear,Daylight,0,2,Wrong Turn,78.217968,8.81321
+TNACC0211,2025-07-04,17:50,Salem,Fatal,Car,Bypass,Clear,Daylight,3,3,Wrong Turn,77.961961,11.760947
+TNACC0212,2024-01-10,14:15,Dindigul,Major,Auto,Bypass,Clear,Daylight,0,4,Brake Failure,78.14053,10.423412
+TNACC0213,2024-08-13,10:20,Vellore,Minor,Bus,State Hwy,Rain,Night-Lit,0,2,Brake Failure,79.248746,13.118172
+TNACC0214,2025-07-10,19:25,Vellore,Minor,Bicycle,National Hwy,Rain,Daylight,0,1,Lane Change,79.20045,12.974373
+TNACC0215,2024-09-10,10:00,Chennai,Minor,Bus,National Hwy,Clear,Dawn/Dusk,0,0,Lane Change,80.255335,12.908624
+TNACC0216,2025-12-28,16:30,Villupuram,Minor,Car,State Hwy,Rain,Night-Unlit,0,1,Road Damage,79.464706,11.665775
+TNACC0217,2024-11-27,23:20,Thanjavur,Minor,Bus,Bypass,Fog,Night-Lit,0,0,Distracted Driving,79.096541,11.006375
+TNACC0218,2024-03-01,23:50,Dharmapuri,Minor,Bicycle,State Hwy,Clear,Night-Lit,0,2,Lane Change,78.15711,11.942319
+TNACC0219,2024-10-02,17:30,Salem,Minor,Van,National Hwy,Clear,Night-Lit,0,1,Poor Visibility,77.91026,11.679937
+TNACC0220,2024-04-05,18:35,Theni,Major,Van,City Road,Rain,Night-Unlit,0,4,Pedestrian Crossing,77.237139,10.028241
+TNACC0221,2024-10-17,11:45,Villupuram,Minor,Bicycle,Village Road,Rain,Night-Unlit,0,0,Overspeeding,79.519895,12.07838
+TNACC0222,2024-01-17,07:10,Chennai,Minor,Two Wheeler,Village Road,Clear,Night-Lit,0,2,Wrong Turn,80.110361,12.919967
+TNACC0223,2024-10-07,06:25,Tiruchirappalli,Minor,Bus,Junction,Cloudy,Daylight,0,2,Pedestrian Crossing,78.855599,11.024936
+TNACC0224,2025-03-15,17:55,Tiruchirappalli,Minor,Car,Village Road,Clear,Night-Lit,0,2,Animal Crossing,78.67444,10.591455
+TNACC0225,2024-05-03,23:30,Erode,Major,Truck,National Hwy,Clear,Daylight,0,3,Distracted Driving,77.994348,11.35719
+TNACC0226,2024-05-23,18:45,Kanyakumari,Major,Bus,Village Road,Clear,Daylight,0,2,Drunk Driving,77.616862,8.463661
+TNACC0227,2024-10-18,19:55,Thanjavur,Minor,Bicycle,Junction,Cloudy,Daylight,0,2,Road Damage,78.908325,10.616146
+TNACC0228,2024-02-25,19:15,Coimbatore,Minor,Two Wheeler,State Hwy,Clear,Night-Lit,0,0,Animal Crossing,76.954439,10.916363
+TNACC0229,2025-08-05,13:40,Salem,Major,Bicycle,Village Road,Cloudy,Night-Unlit,0,1,Overspeeding,78.233635,11.625672
+TNACC0230,2025-02-11,14:50,Madurai,Major,Bicycle,Village Road,Clear,Daylight,0,2,Animal Crossing,78.177778,10.190386
+TNACC0231,2024-07-27,23:10,Tiruchirappalli,Minor,Truck,Bypass,Clear,Night-Unlit,0,1,Distracted Driving,78.746827,10.814915
+TNACC0232,2024-09-01,05:05,Tiruppur,Fatal,Two Wheeler,Village Road,Clear,Daylight,1,0,Wrong Turn,76.929262,11.279131
+TNACC0233,2025-05-23,22:40,Tiruppur,Minor,Bicycle,Junction,Clear,Daylight,0,2,Drunk Driving,77.358801,11.129149
+TNACC0234,2024-11-23,09:05,Kanyakumari,Minor,Two Wheeler,Bypass,Clear,Daylight,0,2,Lane Change,77.54287,8.488768
+TNACC0235,2025-04-21,20:20,Chennai,Minor,Auto,Village Road,Clear,Daylight,0,1,Road Damage,80.314177,13.069795
+TNACC0236,2025-08-28,22:15,Karur,Major,Auto,State Hwy,Clear,Dawn/Dusk,0,3,Overspeeding,77.937847,10.820023
+TNACC0237,2024-12-09,00:50,Kancheepuram,Minor,Van,Junction,Clear,Daylight,0,1,Lane Change,79.903595,12.522417
+TNACC0238,2024-05-25,18:05,Vellore,Minor,Car,Bypass,Clear,Night-Unlit,0,2,Brake Failure,79.60172,12.799941
+TNACC0239,2025-10-14,19:05,Chennai,Minor,Two Wheeler,Village Road,Clear,Daylight,0,1,Drunk Driving,80.14625,13.013496
+TNACC0240,2025-12-18,19:25,Nagapattinam,Minor,Bus,State Hwy,Clear,Daylight,0,0,Road Damage,79.716465,11.063451
+TNACC0241,2024-11-17,12:40,Coimbatore,Minor,Bicycle,State Hwy,Clear,Daylight,0,0,Distracted Driving,77.05908,11.097598
+TNACC0242,2025-12-22,17:00,Coimbatore,Minor,Bicycle,City Road,Clear,Night-Lit,0,1,Poor Visibility,76.991986,10.921214
+TNACC0243,2024-06-27,02:30,Vellore,Major,Auto,Junction,Clear,Daylight,0,2,Distracted Driving,79.277857,12.962418
+TNACC0244,2025-02-14,11:50,Chennai,Fatal,Two Wheeler,Bypass,Clear,Night-Unlit,1,0,Distracted Driving,80.333837,13.075757
+TNACC0245,2024-05-11,06:25,Coimbatore,Minor,Truck,National Hwy,Clear,Night-Lit,0,1,Pedestrian Crossing,77.062081,10.9421
+TNACC0246,2024-12-28,08:10,Chennai,Minor,Truck,State Hwy,Clear,Night-Lit,0,2,Lane Change,80.176959,13.167751
+TNACC0247,2025-05-05,05:20,Tiruchirappalli,Minor,Truck,State Hwy,Clear,Night-Unlit,0,2,Lane Change,78.456234,10.79223
+TNACC0248,2025-01-26,19:25,Krishnagiri,Minor,Bicycle,Village Road,Clear,Night-Lit,0,1,Poor Visibility,78.179287,12.516916
+TNACC0249,2024-08-12,02:20,Madurai,Minor,Truck,Bypass,Clear,Night-Lit,0,0,Lane Change,78.164687,10.020304
+TNACC0250,2024-02-27,18:15,Chennai,Minor,Bicycle,Village Road,Clear,Night-Unlit,0,0,Wrong Turn,80.063034,13.038073
+TNACC0251,2025-12-15,11:45,Madurai,Minor,Van,City Road,Cloudy,Night-Lit,0,0,Road Damage,77.938115,9.805823
+TNACC0252,2025-05-19,15:10,Villupuram,Minor,Two Wheeler,National Hwy,Clear,Daylight,0,1,Animal Crossing,79.856901,11.912104
+TNACC0253,2024-06-30,21:25,Chennai,Minor,Car,Bypass,Rain,Daylight,0,2,Distracted Driving,80.308741,12.979973
+TNACC0254,2025-12-22,22:30,Nagapattinam,Minor,Bus,City Road,Clear,Dawn/Dusk,0,2,Pedestrian Crossing,79.798743,10.819128
+TNACC0255,2025-12-25,22:55,Dharmapuri,Major,Auto,City Road,Clear,Night-Lit,0,3,Wrong Turn,78.000242,12.140334
+TNACC0256,2025-12-19,22:30,Coimbatore,Major,Bicycle,Bypass,Clear,Night-Lit,0,5,Road Damage,76.958959,11.023269
+TNACC0257,2024-03-20,09:25,Chennai,Minor,Two Wheeler,Junction,Clear,Night-Lit,0,1,Poor Visibility,80.331611,13.057105
+TNACC0258,2025-01-30,13:30,Chennai,Fatal,Truck,Village Road,Cloudy,Daylight,1,3,Pedestrian Crossing,80.275429,13.086515
+TNACC0259,2025-12-04,08:35,Krishnagiri,Minor,Bicycle,National Hwy,Clear,Daylight,0,0,Distracted Driving,78.385241,12.329669
+TNACC0260,2024-03-17,15:05,Salem,Minor,Auto,Village Road,Rain,Daylight,0,2,Wrong Turn,78.230039,11.817405
+TNACC0261,2025-02-23,17:55,Kanyakumari,Fatal,Auto,City Road,Clear,Daylight,1,3,Distracted Driving,77.300792,8.513733
+TNACC0262,2024-02-25,11:30,Thoothukudi,Minor,Bicycle,Junction,Clear,Daylight,0,0,Distracted Driving,77.935728,8.699984
+TNACC0263,2024-03-24,14:05,Madurai,Minor,Truck,Village Road,Clear,Night-Lit,0,2,Distracted Driving,78.167367,10.012805
+TNACC0264,2025-01-25,11:35,Thanjavur,Minor,Truck,Village Road,Clear,Night-Unlit,0,0,Road Damage,79.008176,10.899249
+TNACC0265,2024-03-28,17:40,Coimbatore,Minor,Bicycle,Bypass,Clear,Daylight,0,2,Pedestrian Crossing,76.958301,10.838746
+TNACC0266,2025-05-01,16:15,Tirunelveli,Minor,Two Wheeler,Village Road,Cloudy,Night-Lit,0,2,Animal Crossing,77.962603,8.655103
+TNACC0267,2025-09-27,07:35,Sivaganga,Minor,Car,State Hwy,Rain,Daylight,0,0,Pedestrian Crossing,78.250571,9.822284
+TNACC0268,2025-10-04,07:45,Cuddalore,Minor,Van,National Hwy,Clear,Night-Lit,0,1,Animal Crossing,79.198476,11.994227
+TNACC0269,2024-01-13,19:45,Nagapattinam,Minor,Bicycle,Village Road,Clear,Daylight,0,2,Road Damage,79.812243,10.963275
+TNACC0270,2024-04-13,19:40,Thoothukudi,Major,Truck,City Road,Clear,Daylight,0,2,Road Damage,78.341028,8.659004
+TNACC0271,2025-11-28,17:00,Tiruchirappalli,Minor,Bus,Junction,Clear,Night-Lit,0,1,Drunk Driving,78.568165,10.885852
+TNACC0272,2024-08-21,07:55,Chennai,Minor,Bicycle,City Road,Clear,Daylight,0,0,Distracted Driving,80.385376,12.940907
+TNACC0273,2025-05-11,18:25,Erode,Major,Auto,State Hwy,Clear,Night-Lit,0,5,Pedestrian Crossing,77.797795,11.666682
+TNACC0274,2025-04-30,16:25,Kanyakumari,Minor,Bicycle,City Road,Rain,Night-Lit,0,0,Drunk Driving,77.106854,8.24033
+TNACC0275,2024-08-07,20:50,Salem,Minor,Car,City Road,Clear,Daylight,0,1,Overspeeding,78.481957,11.772645
+TNACC0276,2024-01-09,08:45,Sivaganga,Major,Bus,Junction,Fog,Night-Lit,1,3,Pedestrian Crossing,78.558411,9.929023
+TNACC0277,2025-11-24,15:45,Erode,Minor,Two Wheeler,National Hwy,Clear,Night-Lit,0,2,Poor Visibility,77.714665,11.54282
+TNACC0278,2025-12-01,06:05,Kancheepuram,Minor,Bus,Junction,Clear,Daylight,0,0,Drunk Driving,79.584914,12.752666
+TNACC0279,2024-02-28,19:45,Coimbatore,Minor,Bus,Junction,Clear,Daylight,0,1,Brake Failure,76.867357,11.007152
+TNACC0280,2024-02-06,16:45,Madurai,Major,Bus,Junction,Rain,Night-Lit,1,3,Brake Failure,78.221689,9.857731
+TNACC0281,2025-11-04,20:10,Vellore,Minor,Truck,State Hwy,Rain,Night-Lit,0,0,Animal Crossing,79.099218,13.020958
+TNACC0282,2024-04-01,08:15,Theni,Major,Bus,Village Road,Rain,Daylight,0,4,Drunk Driving,77.404625,9.863236
+TNACC0283,2025-10-11,16:45,Nagapattinam,Minor,Car,Bypass,Clear,Night-Lit,0,1,Animal Crossing,79.889053,10.807019
+TNACC0284,2024-05-20,23:25,Tirunelveli,Minor,Auto,Village Road,Clear,Night-Unlit,0,0,Wrong Turn,78.027673,8.831601
+TNACC0285,2024-11-16,17:00,Vellore,Minor,Car,State Hwy,Clear,Daylight,0,0,Distracted Driving,78.87092,13.375632
+TNACC0286,2025-03-15,22:30,Dindigul,Minor,Auto,State Hwy,Rain,Dawn/Dusk,0,2,Poor Visibility,77.805923,10.444442
+TNACC0287,2024-09-11,08:25,Coimbatore,Minor,Two Wheeler,Village Road,Clear,Daylight,0,0,Distracted Driving,76.96664,11.018025
+TNACC0288,2025-06-16,16:25,Tiruchirappalli,Minor,Van,State Hwy,Clear,Night-Unlit,0,0,Poor Visibility,78.830219,10.748372
+TNACC0289,2025-02-17,01:15,Coimbatore,Major,Car,State Hwy,Rain,Night-Lit,0,1,Wrong Turn,77.210159,10.930756
+TNACC0290,2025-07-01,16:45,Salem,Fatal,Van,National Hwy,Clear,Daylight,4,3,Distracted Driving,78.244781,11.567417
+TNACC0291,2025-12-19,07:55,Salem,Major,Two Wheeler,City Road,Clear,Daylight,0,5,Animal Crossing,78.24401,11.760595
+TNACC0292,2024-04-17,15:45,Tiruppur,Minor,Two Wheeler,National Hwy,Clear,Night-Lit,0,2,Drunk Driving,77.561952,11.365981
+TNACC0293,2024-10-29,07:40,Dharmapuri,Minor,Car,Junction,Cloudy,Daylight,0,0,Overspeeding,78.240915,12.39551
+TNACC0294,2025-08-10,17:10,Cuddalore,Fatal,Bicycle,Bypass,Clear,Night-Lit,2,3,Drunk Driving,79.840514,11.796198
+TNACC0295,2024-04-12,19:00,Dharmapuri,Major,Bus,Junction,Clear,Night-Lit,1,1,Distracted Driving,78.099654,12.320458
+TNACC0296,2024-06-23,11:35,Chennai,Fatal,Bus,Junction,Clear,Night-Unlit,1,3,Wrong Turn,80.376572,12.940762
+TNACC0297,2025-01-29,17:35,Tirunelveli,Major,Van,State Hwy,Clear,Night-Lit,1,2,Overspeeding,77.833973,8.680263
+TNACC0298,2025-08-05,17:10,Chennai,Major,Bicycle,City Road,Clear,Night-Unlit,0,4,Wrong Turn,80.132106,13.163461
+TNACC0299,2024-03-05,09:25,Chennai,Minor,Bicycle,Junction,Clear,Night-Lit,0,0,Road Damage,80.369116,12.998745
+TNACC0300,2025-06-15,15:55,Dharmapuri,Major,Truck,Junction,Rain,Daylight,0,5,Pedestrian Crossing,78.508737,12.027333
+TNACC0301,2025-04-02,10:35,Kanyakumari,Major,Two Wheeler,National Hwy,Clear,Daylight,0,1,Animal Crossing,77.202451,8.201945
+TNACC0302,2024-11-07,20:40,Krishnagiri,Minor,Van,Village Road,Cloudy,Daylight,0,0,Overspeeding,78.015333,12.374315
+TNACC0303,2025-09-26,16:55,Nagapattinam,Major,Van,Village Road,Clear,Night-Lit,0,3,Lane Change,79.623581,10.831814
+TNACC0304,2025-07-14,15:55,Villupuram,Minor,Car,Village Road,Clear,Night-Lit,0,0,Pedestrian Crossing,79.270534,11.699695
+TNACC0305,2025-02-06,08:15,Madurai,Major,Two Wheeler,Village Road,Clear,Night-Lit,0,4,Road Damage,78.060473,9.875583
+TNACC0306,2024-05-17,22:00,Erode,Minor,Two Wheeler,Bypass,Cloudy,Night-Unlit,0,2,Brake Failure,77.472291,10.963233
+TNACC0307,2025-08-15,08:10,Krishnagiri,Minor,Van,Bypass,Clear,Daylight,0,1,Pedestrian Crossing,78.31261,12.473161
+TNACC0308,2024-10-07,12:25,Dindigul,Fatal,Truck,State Hwy,Clear,Night-Lit,3,2,Animal Crossing,78.243847,10.213467
+TNACC0309,2024-08-10,08:45,Tiruppur,Major,Van,City Road,Cloudy,Daylight,0,3,Wrong Turn,77.322188,10.880677
+TNACC0310,2025-05-06,16:50,Tiruppur,Major,Van,Junction,Cloudy,Night-Lit,0,5,Pedestrian Crossing,77.466644,11.219751
+TNACC0311,2025-11-17,05:20,Chennai,Major,Car,City Road,Rain,Daylight,0,3,Overspeeding,80.337105,13.093334
+TNACC0312,2025-04-08,06:50,Coimbatore,Major,Bicycle,State Hwy,Rain,Night-Lit,0,3,Lane Change,76.956494,10.986054
+TNACC0313,2025-01-31,12:50,Tiruppur,Minor,Auto,National Hwy,Clear,Daylight,0,1,Road Damage,77.13062,10.755168
+TNACC0314,2025-12-27,17:45,Villupuram,Minor,Auto,State Hwy,Rain,Dawn/Dusk,0,1,Drunk Driving,79.525143,12.192231
+TNACC0315,2024-06-26,18:05,Coimbatore,Minor,Truck,City Road,Clear,Daylight,0,1,Road Damage,77.002755,11.011901
+TNACC0316,2025-10-02,16:50,Chennai,Minor,Bicycle,Bypass,Clear,Daylight,0,2,Poor Visibility,80.253615,13.117503
+TNACC0317,2025-06-01,07:40,Madurai,Minor,Two Wheeler,City Road,Clear,Daylight,0,1,Poor Visibility,78.260034,9.886351
+TNACC0318,2025-09-25,15:40,Salem,Major,Van,National Hwy,Clear,Daylight,1,5,Lane Change,78.02675,12.088922
+TNACC0319,2025-11-29,20:30,Ramanathapuram,Fatal,Two Wheeler,Village Road,Clear,Night-Lit,3,3,Overspeeding,78.526005,9.057936
+TNACC0320,2024-07-16,10:05,Vellore,Fatal,Car,Bypass,Clear,Night-Lit,2,3,Lane Change,79.503627,13.021198
+TNACC0321,2025-12-20,20:55,Villupuram,Major,Van,National Hwy,Rain,Daylight,0,1,Brake Failure,79.66371,12.07596
+TNACC0322,2024-08-21,21:30,Chennai,Minor,Van,Village Road,Clear,Daylight,0,2,Distracted Driving,80.27015,13.128563
+TNACC0323,2025-08-22,04:05,Chennai,Minor,Auto,National Hwy,Clear,Night-Lit,0,0,Road Damage,80.165683,12.953421
+TNACC0324,2025-02-08,19:00,Tiruchirappalli,Minor,Auto,State Hwy,Clear,Daylight,0,1,Animal Crossing,78.717038,10.662331
+TNACC0325,2025-10-25,12:00,Dharmapuri,Minor,Auto,State Hwy,Clear,Daylight,0,1,Road Damage,78.056174,12.014709
+TNACC0326,2024-08-03,18:55,Thanjavur,Minor,Truck,Junction,Rain,Daylight,0,0,Wrong Turn,79.067431,10.764362
+TNACC0327,2024-07-04,17:45,Dindigul,Major,Bicycle,Bypass,Clear,Night-Lit,0,3,Drunk Driving,78.040373,10.265354
+TNACC0328,2025-11-18,17:05,Chennai,Minor,Two Wheeler,State Hwy,Clear,Daylight,0,2,Road Damage,80.378315,13.048881
+TNACC0329,2025-08-03,11:25,Tiruchirappalli,Fatal,Car,National Hwy,Clear,Night-Unlit,3,2,Pedestrian Crossing,78.680697,10.725803
+TNACC0330,2025-05-06,13:25,Coimbatore,Major,Truck,Bypass,Clear,Night-Lit,0,2,Distracted Driving,76.909683,10.919464
+TNACC0331,2024-10-24,07:40,Kanyakumari,Minor,Truck,City Road,Clear,Night-Lit,0,2,Road Damage,77.59018,8.39354
+TNACC0332,2024-06-12,08:45,Coimbatore,Major,Car,Junction,Rain,Dawn/Dusk,0,4,Overspeeding,76.958787,10.950867
+TNACC0333,2024-02-13,17:40,Madurai,Fatal,Bus,Village Road,Clear,Daylight,1,2,Overspeeding,78.22617,9.969543
+TNACC0334,2024-10-07,19:20,Chennai,Minor,Auto,State Hwy,Clear,Daylight,0,2,Road Damage,80.228949,12.943138
+TNACC0335,2025-01-20,22:15,Sivaganga,Minor,Bus,City Road,Clear,Daylight,0,0,Road Damage,78.594639,9.660499
+TNACC0336,2024-08-23,06:50,Vellore,Minor,Car,State Hwy,Clear,Night-Lit,0,2,Distracted Driving,79.276262,12.785648
+TNACC0337,2024-04-26,14:35,Madurai,Minor,Auto,State Hwy,Clear,Daylight,0,0,Lane Change,78.027455,9.980116
+TNACC0338,2025-10-06,15:45,Coimbatore,Minor,Car,City Road,Cloudy,Daylight,0,2,Pedestrian Crossing,76.892114,10.98511
+TNACC0339,2025-11-08,19:05,Dharmapuri,Minor,Auto,Village Road,Cloudy,Daylight,0,2,Pedestrian Crossing,78.124851,12.114121
+TNACC0340,2024-07-05,16:40,Coimbatore,Minor,Van,Junction,Clear,Daylight,0,0,Road Damage,77.01733,10.803088
+TNACC0341,2024-01-17,08:40,Madurai,Major,Bicycle,State Hwy,Clear,Daylight,0,5,Road Damage,78.073708,9.969468
+TNACC0342,2025-11-06,07:45,Vellore,Minor,Two Wheeler,Junction,Clear,Night-Lit,0,0,Poor Visibility,79.134492,12.836892
+TNACC0343,2025-05-08,19:30,Tiruppur,Minor,Bicycle,Junction,Cloudy,Night-Unlit,0,0,Road Damage,77.2134,11.084293
+TNACC0344,2024-08-26,21:05,Tirunelveli,Minor,Auto,Village Road,Clear,Daylight,0,2,Overspeeding,77.831235,8.866707
+TNACC0345,2025-11-01,08:25,Vellore,Minor,Two Wheeler,State Hwy,Clear,Night-Lit,0,2,Drunk Driving,79.149268,12.93109
+TNACC0346,2025-11-27,12:15,Tirunelveli,Minor,Bicycle,Bypass,Clear,Daylight,0,1,Animal Crossing,77.467117,8.616018
+TNACC0347,2025-12-23,12:10,Madurai,Major,Van,National Hwy,Rain,Daylight,0,5,Wrong Turn,78.276944,9.913834
+TNACC0348,2024-02-23,07:50,Tirunelveli,Minor,Two Wheeler,State Hwy,Clear,Night-Lit,0,0,Distracted Driving,77.48839,8.534334
+TNACC0349,2024-02-08,18:30,Madurai,Major,Auto,City Road,Rain,Night-Lit,0,4,Wrong Turn,78.128449,9.973448
+TNACC0350,2024-02-04,19:40,Chennai,Minor,Car,Bypass,Clear,Daylight,0,2,Lane Change,80.30343,12.989797
+TNACC0351,2024-10-09,19:25,Chennai,Major,Truck,Bypass,Clear,Daylight,1,5,Distracted Driving,80.321253,13.074903
+TNACC0352,2025-08-19,11:20,Tiruchirappalli,Minor,Car,Village Road,Cloudy,Night-Lit,0,0,Drunk Driving,78.681761,10.638644
+TNACC0353,2025-05-30,10:05,Tirunelveli,Major,Bus,Bypass,Rain,Night-Lit,1,5,Brake Failure,77.464563,8.704879
+TNACC0354,2025-04-14,17:45,Erode,Major,Truck,National Hwy,Clear,Daylight,0,2,Lane Change,77.755112,11.040399
+TNACC0355,2025-06-12,15:55,Krishnagiri,Major,Car,City Road,Clear,Night-Lit,0,2,Poor Visibility,78.033493,12.937844
+TNACC0356,2025-08-10,09:55,Erode,Major,Car,Village Road,Rain,Daylight,1,2,Lane Change,77.667817,11.457373
+TNACC0357,2025-09-25,11:05,Madurai,Minor,Two Wheeler,Junction,Cloudy,Daylight,0,2,Overspeeding,78.1464,10.012183
+TNACC0358,2025-09-27,10:45,Dharmapuri,Major,Truck,State Hwy,Fog,Night-Unlit,0,5,Drunk Driving,78.356305,12.181905
+TNACC0359,2025-05-04,22:00,Coimbatore,Minor,Truck,Junction,Rain,Daylight,0,2,Distracted Driving,77.158524,11.088562
+TNACC0360,2024-01-13,17:30,Vellore,Minor,Bus,City Road,Clear,Daylight,0,1,Animal Crossing,78.866728,12.984818
+TNACC0361,2024-12-17,11:35,Madurai,Minor,Truck,Junction,Rain,Daylight,0,1,Pedestrian Crossing,78.082972,10.225709
+TNACC0362,2025-08-12,17:05,Erode,Major,Bicycle,State Hwy,Clear,Night-Unlit,0,2,Lane Change,77.757897,11.42733
+TNACC0363,2025-05-26,07:50,Erode,Minor,Van,City Road,Rain,Daylight,0,2,Animal Crossing,77.755654,11.23558
+TNACC0364,2024-03-02,08:20,Chennai,Minor,Van,National Hwy,Clear,Daylight,0,1,Poor Visibility,80.123099,13.19222
+TNACC0365,2024-12-18,01:05,Thoothukudi,Minor,Van,Bypass,Clear,Night-Lit,0,0,Animal Crossing,77.827916,8.648257
+TNACC0366,2025-06-06,14:55,Krishnagiri,Minor,Two Wheeler,Village Road,Clear,Daylight,0,0,Wrong Turn,78.179264,12.682459
+TNACC0367,2025-10-08,16:30,Kancheepuram,Major,Two Wheeler,National Hwy,Clear,Daylight,0,3,Poor Visibility,79.764834,12.681513
+TNACC0368,2025-03-31,19:25,Dindigul,Major,Auto,Village Road,Clear,Daylight,0,2,Overspeeding,77.892284,10.254352
+TNACC0369,2024-03-22,08:30,Cuddalore,Minor,Two Wheeler,Village Road,Clear,Daylight,0,2,Pedestrian Crossing,79.763626,12.047076
+TNACC0370,2025-09-24,07:50,Namakkal,Fatal,Truck,City Road,Clear,Night-Lit,2,1,Brake Failure,78.251999,11.217288
+TNACC0371,2025-11-10,11:25,Thanjavur,Major,Truck,Bypass,Cloudy,Night-Lit,1,5,Wrong Turn,79.162881,10.749892
+TNACC0372,2025-10-13,20:30,Coimbatore,Minor,Van,Bypass,Clear,Daylight,0,0,Animal Crossing,76.844279,10.945207
+TNACC0373,2025-02-26,09:20,Krishnagiri,Minor,Auto,State Hwy,Clear,Daylight,0,2,Overspeeding,78.344311,12.608976
+TNACC0374,2024-11-02,00:30,Ramanathapuram,Major,Auto,State Hwy,Rain,Night-Lit,0,5,Lane Change,78.553585,9.386909
+TNACC0375,2025-10-23,12:30,Tirunelveli,Minor,Two Wheeler,Village Road,Clear,Daylight,0,2,Road Damage,77.609781,8.779904
+TNACC0376,2025-06-28,19:30,Cuddalore,Minor,Two Wheeler,State Hwy,Clear,Daylight,0,2,Brake Failure,79.731055,12.007823
+TNACC0377,2024-07-11,10:10,Erode,Minor,Auto,National Hwy,Clear,Daylight,0,0,Drunk Driving,77.682358,11.589911
+TNACC0378,2024-04-02,07:35,Tiruppur,Minor,Truck,City Road,Rain,Daylight,0,1,Poor Visibility,77.319704,11.117219
+TNACC0379,2024-05-29,05:30,Tiruppur,Minor,Truck,State Hwy,Clear,Night-Unlit,0,0,Pedestrian Crossing,77.382577,10.952761
+TNACC0380,2024-05-05,09:50,Chennai,Minor,Bus,National Hwy,Cloudy,Daylight,0,0,Distracted Driving,80.265677,12.931224
+TNACC0381,2024-10-09,16:30,Kancheepuram,Major,Two Wheeler,National Hwy,Clear,Night-Lit,0,1,Road Damage,79.67818,12.846808
+TNACC0382,2025-09-25,11:50,Madurai,Minor,Bus,Junction,Clear,Night-Lit,0,0,Distracted Driving,78.148591,9.96915
+TNACC0383,2025-10-22,18:35,Vellore,Major,Two Wheeler,Junction,Clear,Night-Lit,1,4,Drunk Driving,79.188609,13.422573
+TNACC0384,2025-12-14,14:45,Tiruppur,Minor,Bus,City Road,Rain,Daylight,0,2,Road Damage,77.202133,11.166062
+TNACC0385,2024-10-29,19:40,Coimbatore,Minor,Two Wheeler,Junction,Clear,Night-Lit,0,2,Overspeeding,77.01903,11.046011
+TNACC0386,2024-11-24,18:50,Nagapattinam,Fatal,Bicycle,Village Road,Clear,Night-Lit,2,2,Animal Crossing,79.680359,10.955536
+TNACC0387,2024-04-08,15:05,Tiruchirappalli,Minor,Car,State Hwy,Cloudy,Daylight,0,0,Brake Failure,78.615443,10.847298
+TNACC0388,2025-09-30,18:20,Chennai,Minor,Car,Bypass,Rain,Daylight,0,2,Lane Change,80.164201,13.172395
+TNACC0389,2025-04-24,19:00,Vellore,Minor,Van,Village Road,Rain,Night-Unlit,0,2,Overspeeding,79.4395,12.768644
+TNACC0390,2024-11-07,06:15,Madurai,Fatal,Two Wheeler,National Hwy,Rain,Night-Lit,2,1,Lane Change,77.927665,9.889772
+TNACC0391,2025-07-25,12:05,Thoothukudi,Major,Auto,City Road,Clear,Night-Lit,1,2,Pedestrian Crossing,78.055049,8.684123
+TNACC0392,2024-12-11,17:40,Krishnagiri,Fatal,Truck,City Road,Cloudy,Night-Lit,3,3,Poor Visibility,78.290951,12.691834
+TNACC0393,2024-11-27,16:45,Namakkal,Minor,Truck,Bypass,Cloudy,Daylight,0,1,Brake Failure,77.942252,10.969307
+TNACC0394,2024-10-18,16:40,Dharmapuri,Minor,Bus,National Hwy,Clear,Daylight,0,0,Poor Visibility,77.925725,12.302279
+TNACC0395,2024-10-09,21:40,Namakkal,Minor,Auto,State Hwy,Clear,Daylight,0,0,Wrong Turn,78.287979,10.971677
+TNACC0396,2024-08-26,09:20,Madurai,Minor,Truck,Bypass,Cloudy,Night-Lit,0,1,Poor Visibility,78.013414,10.042734
+TNACC0397,2025-12-20,16:05,Coimbatore,Minor,Bus,National Hwy,Rain,Night-Lit,0,0,Distracted Driving,76.699525,11.035712
+TNACC0398,2025-03-20,12:05,Ramanathapuram,Major,Car,Junction,Clear,Night-Lit,0,4,Overspeeding,78.877098,9.206574
+TNACC0399,2025-07-06,16:25,Chennai,Minor,Car,State Hwy,Clear,Night-Lit,0,1,Pedestrian Crossing,80.258956,13.11546
+TNACC0400,2024-08-15,13:30,Namakkal,Minor,Bus,National Hwy,Clear,Night-Lit,0,1,Animal Crossing,77.991316,11.099315
+TNACC0401,2025-12-15,07:10,Madurai,Minor,Car,Village Road,Clear,Night-Lit,0,2,Animal Crossing,78.241698,9.997372
+TNACC0402,2024-09-29,19:25,Karur,Major,Auto,National Hwy,Clear,Daylight,0,3,Poor Visibility,77.949459,10.939749
+TNACC0403,2024-11-08,08:25,Salem,Major,Bicycle,Village Road,Clear,Daylight,0,3,Lane Change,78.112885,11.642135
+TNACC0404,2024-04-25,18:15,Coimbatore,Fatal,Car,City Road,Clear,Night-Lit,3,3,Distracted Driving,76.967209,10.782189
+TNACC0405,2025-07-04,08:40,Erode,Minor,Bus,Bypass,Clear,Night-Lit,0,2,Wrong Turn,77.839205,11.358558
+TNACC0406,2025-11-10,15:20,Tiruppur,Minor,Bus,State Hwy,Rain,Night-Lit,0,1,Overspeeding,77.255125,10.956082
+TNACC0407,2025-11-07,09:50,Kancheepuram,Minor,Two Wheeler,National Hwy,Clear,Night-Unlit,0,0,Pedestrian Crossing,79.769802,12.811633
+TNACC0408,2024-11-19,14:45,Salem,Minor,Car,State Hwy,Clear,Daylight,0,0,Overspeeding,77.863309,11.649116
+TNACC0409,2025-05-16,12:10,Madurai,Minor,Van,City Road,Clear,Daylight,0,1,Animal Crossing,78.210185,9.877176
+TNACC0410,2025-01-31,20:00,Villupuram,Fatal,Bus,State Hwy,Clear,Night-Unlit,1,3,Wrong Turn,79.614642,11.99288
+TNACC0411,2025-10-02,17:30,Vellore,Minor,Car,Village Road,Fog,Night-Unlit,0,1,Poor Visibility,79.373586,12.855779
+TNACC0412,2025-08-17,15:15,Thanjavur,Major,Bus,Junction,Rain,Night-Lit,0,2,Wrong Turn,79.317012,10.979455
+TNACC0413,2024-11-21,05:40,Kancheepuram,Fatal,Two Wheeler,State Hwy,Clear,Night-Unlit,3,3,Overspeeding,80.073566,12.670111
+TNACC0414,2025-10-14,21:20,Dharmapuri,Minor,Car,National Hwy,Clear,Daylight,0,2,Road Damage,77.991766,12.230747
+TNACC0415,2025-09-02,09:50,Madurai,Minor,Two Wheeler,Junction,Rain,Daylight,0,1,Road Damage,77.989647,9.823449
+TNACC0416,2025-01-31,14:10,Tiruppur,Minor,Car,National Hwy,Clear,Dawn/Dusk,0,1,Drunk Driving,77.273382,11.015824
+TNACC0417,2024-07-28,05:35,Madurai,Major,Truck,Junction,Clear,Daylight,0,1,Lane Change,78.102649,9.567885
+TNACC0418,2024-11-16,12:55,Dindigul,Minor,Auto,Bypass,Clear,Night-Lit,0,2,Overspeeding,77.964092,10.191934
+TNACC0419,2024-02-13,20:15,Chennai,Minor,Truck,Junction,Clear,Daylight,0,0,Overspeeding,80.056221,13.149998
+TNACC0420,2024-10-19,13:30,Tiruchirappalli,Minor,Two Wheeler,Junction,Clear,Daylight,0,0,Brake Failure,78.473187,10.882914
+TNACC0421,2025-08-22,22:55,Tiruppur,Minor,Truck,Village Road,Clear,Daylight,0,2,Brake Failure,77.22778,11.108032
+TNACC0422,2025-04-10,06:25,Sivaganga,Major,Van,State Hwy,Rain,Daylight,0,3,Distracted Driving,78.455476,9.729418
+TNACC0423,2025-06-07,16:10,Chennai,Minor,Truck,National Hwy,Rain,Night-Unlit,0,2,Road Damage,80.153877,13.065086
+TNACC0424,2024-07-02,18:00,Nagapattinam,Minor,Bus,Junction,Rain,Daylight,0,0,Wrong Turn,80.05798,11.060327
+TNACC0425,2025-09-29,18:00,Sivaganga,Minor,Bicycle,Village Road,Clear,Daylight,0,0,Brake Failure,78.565696,9.936171
+TNACC0426,2025-02-23,13:45,Madurai,Major,Car,Bypass,Clear,Night-Lit,0,2,Lane Change,78.00414,9.852955
+TNACC0427,2024-02-03,17:45,Chennai,Minor,Two Wheeler,National Hwy,Clear,Dawn/Dusk,0,2,Wrong Turn,80.251957,13.055753
+TNACC0428,2025-09-01,16:40,Tiruchirappalli,Minor,Truck,Junction,Clear,Dawn/Dusk,0,1,Distracted Driving,78.563701,10.67222
+TNACC0429,2024-03-10,18:40,Tiruchirappalli,Minor,Truck,State Hwy,Clear,Night-Unlit,0,2,Poor Visibility,78.625293,10.876597
+TNACC0430,2025-09-18,05:45,Tirunelveli,Major,Van,Bypass,Fog,Daylight,1,3,Road Damage,77.420213,8.671066
+TNACC0431,2025-06-22,16:45,Tirunelveli,Minor,Car,Bypass,Clear,Daylight,0,1,Brake Failure,77.572886,8.614689
+TNACC0432,2025-12-26,10:15,Krishnagiri,Minor,Two Wheeler,Village Road,Clear,Daylight,0,2,Lane Change,78.318919,12.749863
+TNACC0433,2025-07-27,19:15,Tirunelveli,Minor,Car,Junction,Clear,Night-Unlit,0,1,Drunk Driving,77.555461,8.797322
+TNACC0434,2024-04-26,17:25,Vellore,Minor,Auto,Bypass,Fog,Night-Unlit,0,1,Lane Change,78.841081,12.821565
+TNACC0435,2025-04-30,19:50,Villupuram,Minor,Car,Junction,Clear,Night-Unlit,0,1,Poor Visibility,79.34495,12.169023
+TNACC0436,2024-02-27,19:20,Krishnagiri,Minor,Van,City Road,Clear,Daylight,0,2,Road Damage,78.37561,12.147007
+TNACC0437,2024-12-28,05:10,Tiruchirappalli,Minor,Two Wheeler,City Road,Fog,Night-Lit,0,2,Wrong Turn,78.781601,10.551451
+TNACC0438,2024-11-11,18:25,Dindigul,Major,Bus,Village Road,Clear,Night-Unlit,0,3,Poor Visibility,77.794198,10.522114
+TNACC0439,2025-01-18,19:15,Madurai,Fatal,Truck,Bypass,Clear,Daylight,2,1,Animal Crossing,78.046288,9.913509
+TNACC0440,2025-06-20,10:25,Salem,Minor,Bicycle,National Hwy,Rain,Dawn/Dusk,0,0,Wrong Turn,78.405286,11.529377
+TNACC0441,2025-06-18,07:20,Tiruppur,Fatal,Van,Bypass,Cloudy,Daylight,1,2,Overspeeding,77.514674,11.14908
+TNACC0442,2024-08-02,10:15,Chennai,Minor,Auto,City Road,Rain,Night-Lit,0,0,Drunk Driving,80.178976,13.03409
+TNACC0443,2025-09-29,15:05,Coimbatore,Minor,Bus,Bypass,Clear,Daylight,0,2,Drunk Driving,76.952686,11.037611
+TNACC0444,2024-12-12,15:00,Madurai,Minor,Truck,Junction,Clear,Daylight,0,1,Distracted Driving,78.169007,10.01643
+TNACC0445,2025-08-29,17:55,Salem,Major,Auto,City Road,Clear,Night-Unlit,0,4,Animal Crossing,78.250602,11.882952
+TNACC0446,2025-12-16,14:35,Thoothukudi,Minor,Van,Junction,Rain,Daylight,0,0,Lane Change,78.35766,9.006952
+TNACC0447,2025-01-07,12:55,Nagapattinam,Fatal,Bus,City Road,Clear,Daylight,1,2,Brake Failure,79.955164,10.681946
+TNACC0448,2024-12-22,16:10,Erode,Minor,Truck,Junction,Rain,Daylight,0,1,Distracted Driving,77.610284,11.367564
+TNACC0449,2024-09-01,16:40,Thanjavur,Minor,Truck,Village Road,Clear,Daylight,0,1,Road Damage,78.906653,10.845092
+TNACC0450,2024-12-16,15:15,Krishnagiri,Minor,Van,National Hwy,Rain,Night-Lit,0,0,Brake Failure,78.44486,12.4977
+TNACC0451,2024-04-09,19:10,Thoothukudi,Minor,Truck,National Hwy,Clear,Night-Lit,0,1,Road Damage,78.003321,8.673542
+TNACC0452,2024-04-02,08:10,Tiruchirappalli,Major,Bicycle,Junction,Rain,Night-Lit,0,3,Wrong Turn,78.528508,10.796818
+TNACC0453,2024-07-29,17:25,Salem,Minor,Bicycle,Junction,Clear,Dawn/Dusk,0,2,Pedestrian Crossing,77.999464,11.534172
+TNACC0454,2024-01-09,16:40,Ramanathapuram,Minor,Car,City Road,Clear,Night-Unlit,0,0,Overspeeding,78.81184,9.43619
+TNACC0455,2024-04-22,20:00,Tiruppur,Minor,Van,Bypass,Clear,Daylight,0,1,Pedestrian Crossing,76.876799,10.924568
+TNACC0456,2024-06-26,14:15,Salem,Minor,Bicycle,City Road,Rain,Daylight,0,0,Wrong Turn,78.032145,11.713408
+TNACC0457,2025-05-13,17:10,Chennai,Minor,Van,Village Road,Cloudy,Night-Unlit,0,1,Road Damage,80.28992,13.092003
+TNACC0458,2025-07-19,19:30,Dindigul,Minor,Car,Village Road,Clear,Night-Lit,0,2,Lane Change,78.072013,10.561559
+TNACC0459,2025-08-13,11:00,Vellore,Minor,Van,City Road,Clear,Daylight,0,0,Distracted Driving,79.083666,13.324852
+TNACC0460,2024-10-13,14:05,Karur,Minor,Auto,National Hwy,Clear,Night-Lit,0,2,Distracted Driving,78.021487,10.447641
+TNACC0461,2025-09-19,04:25,Kancheepuram,Minor,Two Wheeler,Village Road,Clear,Night-Unlit,0,2,Road Damage,79.477077,12.776425
+TNACC0462,2024-10-28,10:00,Tiruchirappalli,Major,Auto,Junction,Clear,Night-Unlit,0,4,Drunk Driving,78.436349,10.935804
+TNACC0463,2024-10-25,19:45,Thoothukudi,Minor,Truck,National Hwy,Clear,Daylight,0,1,Drunk Driving,78.163329,8.815391
+TNACC0464,2024-09-20,00:05,Coimbatore,Major,Auto,Junction,Clear,Daylight,0,2,Wrong Turn,76.883898,10.952766
+TNACC0465,2024-02-03,11:05,Vellore,Fatal,Auto,State Hwy,Rain,Night-Lit,4,1,Pedestrian Crossing,79.226117,13.116378
+TNACC0466,2024-08-03,16:25,Cuddalore,Minor,Bus,National Hwy,Clear,Daylight,0,1,Brake Failure,79.528147,11.844129
+TNACC0467,2025-06-29,09:50,Erode,Major,Truck,City Road,Clear,Night-Unlit,0,4,Overspeeding,77.709926,11.040315
+TNACC0468,2025-11-30,22:05,Salem,Fatal,Van,City Road,Cloudy,Daylight,3,2,Drunk Driving,77.946256,11.250047
+TNACC0469,2025-08-21,12:50,Madurai,Major,Van,Junction,Clear,Daylight,0,2,Poor Visibility,78.149548,9.837986
+TNACC0470,2024-03-10,00:05,Tiruchirappalli,Minor,Van,Village Road,Clear,Night-Lit,0,0,Drunk Driving,78.533293,10.737636
+TNACC0471,2025-08-31,17:15,Chennai,Fatal,Van,National Hwy,Rain,Daylight,2,3,Road Damage,80.32282,13.090519
+TNACC0472,2024-07-08,21:55,Kancheepuram,Minor,Bus,Village Road,Clear,Daylight,0,1,Brake Failure,79.729517,12.575105
+TNACC0473,2024-11-27,09:05,Namakkal,Minor,Two Wheeler,Village Road,Clear,Dawn/Dusk,0,1,Drunk Driving,77.818784,11.391739
+TNACC0474,2024-07-24,16:10,Coimbatore,Major,Two Wheeler,State Hwy,Clear,Daylight,0,4,Road Damage,76.825813,11.067723
+TNACC0475,2024-03-13,16:20,Tiruppur,Major,Two Wheeler,Village Road,Clear,Night-Lit,0,3,Overspeeding,77.338391,11.156374
+TNACC0476,2025-08-11,00:55,Coimbatore,Fatal,Truck,Village Road,Clear,Night-Unlit,2,0,Distracted Driving,76.875496,10.769359
+TNACC0477,2025-05-08,07:40,Salem,Fatal,Bus,City Road,Rain,Daylight,3,2,Distracted Driving,78.464568,11.569911
+TNACC0478,2024-10-23,17:10,Chennai,Minor,Truck,Junction,Clear,Night-Lit,0,2,Distracted Driving,80.380671,12.912225
+TNACC0479,2025-10-09,13:15,Cuddalore,Minor,Car,National Hwy,Rain,Night-Lit,0,1,Brake Failure,79.718651,11.808633
+TNACC0480,2025-05-26,15:35,Chennai,Fatal,Two Wheeler,National Hwy,Clear,Daylight,4,0,Overspeeding,80.316423,12.916547
+TNACC0481,2025-04-14,22:40,Madurai,Minor,Auto,State Hwy,Cloudy,Daylight,0,1,Wrong Turn,78.182316,9.758503
+TNACC0482,2025-09-25,04:55,Kancheepuram,Major,Two Wheeler,State Hwy,Clear,Night-Unlit,0,2,Distracted Driving,80.096561,12.881097
+TNACC0483,2024-04-18,07:45,Villupuram,Major,Car,National Hwy,Rain,Daylight,0,5,Pedestrian Crossing,79.206818,11.760285
+TNACC0484,2024-08-06,18:45,Thanjavur,Minor,Two Wheeler,National Hwy,Clear,Night-Lit,0,2,Wrong Turn,79.362728,11.046916
+TNACC0485,2025-08-18,03:05,Salem,Major,Van,Bypass,Clear,Daylight,0,1,Brake Failure,77.963353,11.6006
+TNACC0486,2025-08-30,20:30,Coimbatore,Major,Bicycle,Village Road,Rain,Daylight,0,4,Drunk Driving,77.123879,10.932666
+TNACC0487,2024-02-08,16:55,Madurai,Minor,Two Wheeler,Junction,Rain,Daylight,0,0,Pedestrian Crossing,78.272285,9.862699
+TNACC0488,2025-06-26,23:45,Thanjavur,Minor,Bicycle,Bypass,Clear,Daylight,0,1,Lane Change,79.14811,10.876336
+TNACC0489,2025-04-30,14:10,Chennai,Major,Two Wheeler,National Hwy,Clear,Daylight,0,5,Pedestrian Crossing,80.145774,12.792795
+TNACC0490,2024-04-16,18:40,Krishnagiri,Minor,Bicycle,National Hwy,Clear,Daylight,0,2,Lane Change,78.366145,12.400615
+TNACC0491,2024-07-22,18:25,Erode,Minor,Two Wheeler,City Road,Clear,Daylight,0,0,Pedestrian Crossing,77.583683,11.253047
+TNACC0492,2025-08-22,14:30,Salem,Minor,Auto,Village Road,Clear,Daylight,0,2,Brake Failure,78.200588,11.619924
+TNACC0493,2024-07-26,11:00,Coimbatore,Major,Two Wheeler,City Road,Clear,Night-Unlit,0,3,Brake Failure,76.735041,10.775651
+TNACC0494,2025-10-15,22:10,Madurai,Minor,Auto,State Hwy,Clear,Night-Unlit,0,0,Brake Failure,78.24321,9.818326
+TNACC0495,2024-01-15,18:55,Thoothukudi,Major,Car,City Road,Clear,Daylight,1,5,Road Damage,77.936925,8.797469
+TNACC0496,2024-02-11,23:55,Sivaganga,Major,Two Wheeler,Village Road,Clear,Daylight,0,2,Distracted Driving,78.987425,9.863079
+TNACC0497,2025-02-20,22:10,Chennai,Minor,Car,Junction,Fog,Daylight,0,0,Drunk Driving,80.252993,13.075883
+TNACC0498,2025-08-20,01:35,Tiruppur,Minor,Car,Junction,Clear,Night-Unlit,0,2,Poor Visibility,77.114735,11.167709
+TNACC0499,2025-10-04,05:55,Erode,Minor,Two Wheeler,City Road,Clear,Daylight,0,2,Road Damage,77.714514,11.331988
+TNACC0500,2024-02-26,15:50,Thoothukudi,Minor,Two Wheeler,National Hwy,Clear,Daylight,0,1,Overspeeding,78.459075,8.945025

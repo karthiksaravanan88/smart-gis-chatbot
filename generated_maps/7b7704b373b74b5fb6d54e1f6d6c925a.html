@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_80b85896289b7754839cdbbfdf888332 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_80b85896289b7754839cdbbfdf888332" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_80b85896289b7754839cdbbfdf888332 = L.map(
+                "map_80b85896289b7754839cdbbfdf888332",
+                {
+                    center: [9.925023858916704, 78.125],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "maxBounds": [
+[
+9.8,
+78.0,
+],
+[
+10.05,
+78.25,
+],
+],
+}
+
+                }
+            );
+            L.control.scale().addTo(map_80b85896289b7754839cdbbfdf888332);
+
+            
+
+        
+    
+            var tile_layer_4fc0a04fb6b2b0ceeabc6162cf5f90f1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4fc0a04fb6b2b0ceeabc6162cf5f90f1.addTo(map_80b85896289b7754839cdbbfdf888332);
+        
+    
+            map_80b85896289b7754839cdbbfdf888332.fitBounds(
+                [[9.8, 78.0], [10.05, 78.25]],
+                {}
+            );
+        
+    
+        function geo_json_3911a7055c68c1e4e76abdf43793c0c8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#0f172a", "fillOpacity": 0.02, "weight": 3};
+            }
+        }
+
+        function geo_json_3911a7055c68c1e4e76abdf43793c0c8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3911a7055c68c1e4e76abdf43793c0c8 = L.geoJson(null, {
+                onEachFeature: geo_json_3911a7055c68c1e4e76abdf43793c0c8_onEachFeature,
+            
+                style: geo_json_3911a7055c68c1e4e76abdf43793c0c8_styler,
+            ...{
+}
+        });
+
+        function geo_json_3911a7055c68c1e4e76abdf43793c0c8_add (data) {
+            geo_json_3911a7055c68c1e4e76abdf43793c0c8
+                .addData(data);
+        }
+            geo_json_3911a7055c68c1e4e76abdf43793c0c8_add({"bbox": [76.85, 9.8, 80.35, 13.2], "features": [{"bbox": [76.85, 9.8, 80.35, 13.2], "geometry": {"coordinates": [[[[78.25, 10.05], [78.25, 9.8], [78.0, 9.8], [78.0, 10.05], [78.25, 10.05]]], [[[78.8, 10.9], [78.8, 10.68], [78.55, 10.68], [78.55, 10.9], [78.8, 10.9]]], [[[77.1, 11.12], [77.1, 10.9], [76.85, 10.9], [76.85, 11.12], [77.1, 11.12]]], [[[79.25, 12.8], [79.0, 12.8], [79.0, 13.02], [79.25, 13.02], [79.25, 12.8]]], [[[80.35, 12.95], [80.1, 12.95], [80.1, 13.2], [80.35, 13.2], [80.35, 12.95]]]], "type": "MultiPolygon"}, "id": "0", "properties": {"state": "Tamil Nadu"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_3911a7055c68c1e4e76abdf43793c0c8.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["state"];
+    let aliases = ["state"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_3911a7055c68c1e4e76abdf43793c0c8.addTo(map_80b85896289b7754839cdbbfdf888332);
+        
+    
+        function geo_json_9e22c217a3e67391ae0df88bc4b35051_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#475569", "fillOpacity": 0.04, "weight": 1};
+            }
+        }
+
+        function geo_json_9e22c217a3e67391ae0df88bc4b35051_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_9e22c217a3e67391ae0df88bc4b35051 = L.geoJson(null, {
+                onEachFeature: geo_json_9e22c217a3e67391ae0df88bc4b35051_onEachFeature,
+            
+                style: geo_json_9e22c217a3e67391ae0df88bc4b35051_styler,
+            ...{
+}
+        });
+
+        function geo_json_9e22c217a3e67391ae0df88bc4b35051_add (data) {
+            geo_json_9e22c217a3e67391ae0df88bc4b35051
+                .addData(data);
+        }
+            geo_json_9e22c217a3e67391ae0df88bc4b35051_add({"bbox": [76.85, 9.8, 80.35, 13.2], "features": [{"bbox": [80.1, 12.95, 80.35, 13.2], "geometry": {"coordinates": [[[80.1, 12.95], [80.35, 12.95], [80.35, 13.2], [80.1, 13.2], [80.1, 12.95]]], "type": "Polygon"}, "id": "0", "properties": {"district": "Chennai"}, "type": "Feature"}, {"bbox": [76.85, 10.9, 77.1, 11.12], "geometry": {"coordinates": [[[76.85, 10.9], [77.1, 10.9], [77.1, 11.12], [76.85, 11.12], [76.85, 10.9]]], "type": "Polygon"}, "id": "1", "properties": {"district": "Coimbatore"}, "type": "Feature"}, {"bbox": [78.0, 9.8, 78.25, 10.05], "geometry": {"coordinates": [[[78.0, 9.8], [78.25, 9.8], [78.25, 10.05], [78.0, 10.05], [78.0, 9.8]]], "type": "Polygon"}, "id": "2", "properties": {"district": "Madurai"}, "type": "Feature"}, {"bbox": [78.55, 10.68, 78.8, 10.9], "geometry": {"coordinates": [[[78.55, 10.68], [78.8, 10.68], [78.8, 10.9], [78.55, 10.9], [78.55, 10.68]]], "type": "Polygon"}, "id": "3", "properties": {"district": "Tiruchirappalli"}, "type": "Feature"}, {"bbox": [79.0, 12.8, 79.25, 13.02], "geometry": {"coordinates": [[[79.0, 12.8], [79.25, 12.8], [79.25, 13.02], [79.0, 13.02], [79.0, 12.8]]], "type": "Polygon"}, "id": "4", "properties": {"district": "Vellore"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9e22c217a3e67391ae0df88bc4b35051.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["district"];
+    let aliases = ["district"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_9e22c217a3e67391ae0df88bc4b35051.addTo(map_80b85896289b7754839cdbbfdf888332);
+        
+    
+            var marker_cluster_e500f689f35be819ff07c61760ca69c9 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_6bda553a23dab8ef80eb3531f464d5c8 = L.circleMarker(
+                [9.8359878, 78.1153839],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_63e4446fe1c37d80290aff7f02e5ba46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e93aa9b629aaa68906b9406dc100dbfe = $(`<div id="html_e93aa9b629aaa68906b9406dc100dbfe" style="width: 100.0%; height: 100.0%;">Name: Rural Theological Institute<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_63e4446fe1c37d80290aff7f02e5ba46.setContent(html_e93aa9b629aaa68906b9406dc100dbfe);
+            
+        
+
+        circle_marker_6bda553a23dab8ef80eb3531f464d5c8.bindPopup(popup_63e4446fe1c37d80290aff7f02e5ba46)
+        ;
+
+        
+    
+    
+            circle_marker_6bda553a23dab8ef80eb3531f464d5c8.bindTooltip(
+                `<div>
+                     Rural Theological Institute
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5175d65677133b18d293a9a348b1bca4 = L.circleMarker(
+                [9.8359984, 78.1130799],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_7157ed18b79a6241733c626d7a98614a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d17bd31cdabe2282c544f401bf6d4e2 = $(`<div id="html_3d17bd31cdabe2282c544f401bf6d4e2" style="width: 100.0%; height: 100.0%;">Name: Institute of Cooperative Management<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_7157ed18b79a6241733c626d7a98614a.setContent(html_3d17bd31cdabe2282c544f401bf6d4e2);
+            
+        
+
+        circle_marker_5175d65677133b18d293a9a348b1bca4.bindPopup(popup_7157ed18b79a6241733c626d7a98614a)
+        ;
+
+        
+    
+    
+            circle_marker_5175d65677133b18d293a9a348b1bca4.bindTooltip(
+                `<div>
+                     Institute of Cooperative Management
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_690105f8954bbec20d96ad8ce1be744d = L.circleMarker(
+                [9.9079085, 78.1153022],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_3ba61e2901cefe4521a6b92676994241 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1305de2cf02dc65138c555f86d84b871 = $(`<div id="html_1305de2cf02dc65138c555f86d84b871" style="width: 100.0%; height: 100.0%;">Name: KVT Matric Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_3ba61e2901cefe4521a6b92676994241.setContent(html_1305de2cf02dc65138c555f86d84b871);
+            
+        
+
+        circle_marker_690105f8954bbec20d96ad8ce1be744d.bindPopup(popup_3ba61e2901cefe4521a6b92676994241)
+        ;
+
+        
+    
+    
+            circle_marker_690105f8954bbec20d96ad8ce1be744d.bindTooltip(
+                `<div>
+                     KVT Matric Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd7010bd0eb3759d91895b87ee9061e6 = L.circleMarker(
+                [9.9102875, 78.1342604],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_2dc068ed161f2d8d793f5281b2c8b17f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_babc72cb0d993aef55e528d16233804a = $(`<div id="html_babc72cb0d993aef55e528d16233804a" style="width: 100.0%; height: 100.0%;">Name: Pazhaniappa Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_2dc068ed161f2d8d793f5281b2c8b17f.setContent(html_babc72cb0d993aef55e528d16233804a);
+            
+        
+
+        circle_marker_cd7010bd0eb3759d91895b87ee9061e6.bindPopup(popup_2dc068ed161f2d8d793f5281b2c8b17f)
+        ;
+
+        
+    
+    
+            circle_marker_cd7010bd0eb3759d91895b87ee9061e6.bindTooltip(
+                `<div>
+                     Pazhaniappa Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d32caf69435ee351609a3b433974f830 = L.circleMarker(
+                [9.9116895, 78.1284416],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_2f8b7599ff988d9ddc506713d8c5d1b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7d99b1056b3056c9a8e726a59eb9f29 = $(`<div id="html_f7d99b1056b3056c9a8e726a59eb9f29" style="width: 100.0%; height: 100.0%;">Name: Virudhunagar Hindu Nadar Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_2f8b7599ff988d9ddc506713d8c5d1b9.setContent(html_f7d99b1056b3056c9a8e726a59eb9f29);
+            
+        
+
+        circle_marker_d32caf69435ee351609a3b433974f830.bindPopup(popup_2f8b7599ff988d9ddc506713d8c5d1b9)
+        ;
+
+        
+    
+    
+            circle_marker_d32caf69435ee351609a3b433974f830.bindTooltip(
+                `<div>
+                     Virudhunagar Hindu Nadar Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9acf55bf6556c81cd0405c3bd028a94 = L.circleMarker(
+                [9.9127888, 78.1276812],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_7f7d69e15407f73189fe6f3310612338 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46bc48bd4d216a27d73345da5812f88d = $(`<div id="html_46bc48bd4d216a27d73345da5812f88d" style="width: 100.0%; height: 100.0%;">Name: St.Joseph’s Girls Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_7f7d69e15407f73189fe6f3310612338.setContent(html_46bc48bd4d216a27d73345da5812f88d);
+            
+        
+
+        circle_marker_e9acf55bf6556c81cd0405c3bd028a94.bindPopup(popup_7f7d69e15407f73189fe6f3310612338)
+        ;
+
+        
+    
+    
+            circle_marker_e9acf55bf6556c81cd0405c3bd028a94.bindTooltip(
+                `<div>
+                     St.Joseph’s Girls Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bd634d0a88b5f745a1df1986fadb5ec = L.circleMarker(
+                [9.9129522, 78.1262674],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_af7082bad91305403d55e918037b3cf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a80be4b3cdb813254ad4ba72d1e4d66f = $(`<div id="html_a80be4b3cdb813254ad4ba72d1e4d66f" style="width: 100.0%; height: 100.0%;">Name: ஸ்ட.ஜோசப்மிடில் ஸ்கூல்<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_af7082bad91305403d55e918037b3cf9.setContent(html_a80be4b3cdb813254ad4ba72d1e4d66f);
+            
+        
+
+        circle_marker_2bd634d0a88b5f745a1df1986fadb5ec.bindPopup(popup_af7082bad91305403d55e918037b3cf9)
+        ;
+
+        
+    
+    
+            circle_marker_2bd634d0a88b5f745a1df1986fadb5ec.bindTooltip(
+                `<div>
+                     ஸ்ட.ஜோசப்மிடில் ஸ்கூல்
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0a7491326d22dcad7696616713f95d5 = L.circleMarker(
+                [9.9170545, 78.1118966],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_29e8a54f35be3c78c8c00ed4c5308618 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a68393516a180a9b4bf84f3b2b47a308 = $(`<div id="html_a68393516a180a9b4bf84f3b2b47a308" style="width: 100.0%; height: 100.0%;">Name: Union Christian Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_29e8a54f35be3c78c8c00ed4c5308618.setContent(html_a68393516a180a9b4bf84f3b2b47a308);
+            
+        
+
+        circle_marker_f0a7491326d22dcad7696616713f95d5.bindPopup(popup_29e8a54f35be3c78c8c00ed4c5308618)
+        ;
+
+        
+    
+    
+            circle_marker_f0a7491326d22dcad7696616713f95d5.bindTooltip(
+                `<div>
+                     Union Christian Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9bd9d9b219411110ac3f1f43a3d0ba6 = L.circleMarker(
+                [9.9172765, 78.1359593],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_bc30897acee884b0e4962a4d472db2fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5544aee6c9e383acc14dcaeb1ec29ad7 = $(`<div id="html_5544aee6c9e383acc14dcaeb1ec29ad7" style="width: 100.0%; height: 100.0%;">Name: Sourashtra Boys Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_bc30897acee884b0e4962a4d472db2fb.setContent(html_5544aee6c9e383acc14dcaeb1ec29ad7);
+            
+        
+
+        circle_marker_b9bd9d9b219411110ac3f1f43a3d0ba6.bindPopup(popup_bc30897acee884b0e4962a4d472db2fb)
+        ;
+
+        
+    
+    
+            circle_marker_b9bd9d9b219411110ac3f1f43a3d0ba6.bindTooltip(
+                `<div>
+                     Sourashtra Boys Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd4cb777e7308925baab91e86d27a108 = L.circleMarker(
+                [9.930851, 78.1134573],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_49a85cad08d7c34ca03439f55e3a6ca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a64464d6390f2503a98a35797165be00 = $(`<div id="html_a64464d6390f2503a98a35797165be00" style="width: 100.0%; height: 100.0%;">Name: Capran Hall Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_49a85cad08d7c34ca03439f55e3a6ca7.setContent(html_a64464d6390f2503a98a35797165be00);
+            
+        
+
+        circle_marker_bd4cb777e7308925baab91e86d27a108.bindPopup(popup_49a85cad08d7c34ca03439f55e3a6ca7)
+        ;
+
+        
+    
+    
+            circle_marker_bd4cb777e7308925baab91e86d27a108.bindTooltip(
+                `<div>
+                     Capran Hall Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88cf735819699ae6bce4dfb22c6e157e = L.circleMarker(
+                [9.8797434, 78.0798631],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_0d1a1b37484d1533d118386133a36b96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07796d18af73b4d717f6d31875b1f08e = $(`<div id="html_07796d18af73b4d717f6d31875b1f08e" style="width: 100.0%; height: 100.0%;">Name: கேந்திரிய வித்யாலயா பள்ளி<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_0d1a1b37484d1533d118386133a36b96.setContent(html_07796d18af73b4d717f6d31875b1f08e);
+            
+        
+
+        circle_marker_88cf735819699ae6bce4dfb22c6e157e.bindPopup(popup_0d1a1b37484d1533d118386133a36b96)
+        ;
+
+        
+    
+    
+            circle_marker_88cf735819699ae6bce4dfb22c6e157e.bindTooltip(
+                `<div>
+                     கேந்திரிய வித்யாலயா பள்ளி
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3b1d347a75774eb789fb24ba323a8c9 = L.circleMarker(
+                [9.8851544, 78.0958287],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_9088d56480f486807c08427b25b483f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19a49a093215de32884819960c89db95 = $(`<div id="html_19a49a093215de32884819960c89db95" style="width: 100.0%; height: 100.0%;">Name: Evergreen Vidhyaashram CBSE School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_9088d56480f486807c08427b25b483f0.setContent(html_19a49a093215de32884819960c89db95);
+            
+        
+
+        circle_marker_b3b1d347a75774eb789fb24ba323a8c9.bindPopup(popup_9088d56480f486807c08427b25b483f0)
+        ;
+
+        
+    
+    
+            circle_marker_b3b1d347a75774eb789fb24ba323a8c9.bindTooltip(
+                `<div>
+                     Evergreen Vidhyaashram CBSE School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2adde1f5b2ed41ac351ea459dc5e33a6 = L.circleMarker(
+                [9.8934069, 78.0825247],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_8c4977baa770116154df5e4f7d4632ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab1db511c320c1131aa1efaffdb12995 = $(`<div id="html_ab1db511c320c1131aa1efaffdb12995" style="width: 100.0%; height: 100.0%;">Name: Haran Dhivubai InderMalji Jain Matriculation Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_8c4977baa770116154df5e4f7d4632ff.setContent(html_ab1db511c320c1131aa1efaffdb12995);
+            
+        
+
+        circle_marker_2adde1f5b2ed41ac351ea459dc5e33a6.bindPopup(popup_8c4977baa770116154df5e4f7d4632ff)
+        ;
+
+        
+    
+    
+            circle_marker_2adde1f5b2ed41ac351ea459dc5e33a6.bindTooltip(
+                `<div>
+                     Haran Dhivubai InderMalji Jain Matriculation Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ed5c00ba2519c53d4f38f2a67e25737 = L.circleMarker(
+                [9.9012734, 78.1003216],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_fb3c789afd0da220dc8420742c9644d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7069f2a4c1c1594e14ef35b7e1a86e96 = $(`<div id="html_7069f2a4c1c1594e14ef35b7e1a86e96" style="width: 100.0%; height: 100.0%;">Name: TVS Lakshmi Matriculation Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_fb3c789afd0da220dc8420742c9644d7.setContent(html_7069f2a4c1c1594e14ef35b7e1a86e96);
+            
+        
+
+        circle_marker_2ed5c00ba2519c53d4f38f2a67e25737.bindPopup(popup_fb3c789afd0da220dc8420742c9644d7)
+        ;
+
+        
+    
+    
+            circle_marker_2ed5c00ba2519c53d4f38f2a67e25737.bindTooltip(
+                `<div>
+                     TVS Lakshmi Matriculation Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_445e1f893ea23adc11fa33bba34584f9 = L.circleMarker(
+                [9.9025758, 78.1082564],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_aab964d31e1a606ee9d7ce0dd1d1f54f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e356f5a2c582726e83429681614cacfc = $(`<div id="html_e356f5a2c582726e83429681614cacfc" style="width: 100.0%; height: 100.0%;">Name: KACA Arunachalam Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_aab964d31e1a606ee9d7ce0dd1d1f54f.setContent(html_e356f5a2c582726e83429681614cacfc);
+            
+        
+
+        circle_marker_445e1f893ea23adc11fa33bba34584f9.bindPopup(popup_aab964d31e1a606ee9d7ce0dd1d1f54f)
+        ;
+
+        
+    
+    
+            circle_marker_445e1f893ea23adc11fa33bba34584f9.bindTooltip(
+                `<div>
+                     KACA Arunachalam Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9024d5bfeabbbba7496ac81f92aca51b = L.circleMarker(
+                [9.9035012, 78.1045244],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_945ce80bc44a79f995366a8322978906 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2150cba9e2ac24d329a53aca87c96a8 = $(`<div id="html_e2150cba9e2ac24d329a53aca87c96a8" style="width: 100.0%; height: 100.0%;">Name: TVS Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_945ce80bc44a79f995366a8322978906.setContent(html_e2150cba9e2ac24d329a53aca87c96a8);
+            
+        
+
+        circle_marker_9024d5bfeabbbba7496ac81f92aca51b.bindPopup(popup_945ce80bc44a79f995366a8322978906)
+        ;
+
+        
+    
+    
+            circle_marker_9024d5bfeabbbba7496ac81f92aca51b.bindTooltip(
+                `<div>
+                     TVS Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d96420df03cefa3ea0091407df4d1bfb = L.circleMarker(
+                [9.9224992, 78.0788393],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_d37488821f5d8acc9ea72e73bd64cde1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98db71cfbfe32b36d2ae9589ab4bfa04 = $(`<div id="html_98db71cfbfe32b36d2ae9589ab4bfa04" style="width: 100.0%; height: 100.0%;">Name: School 1031692289<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_d37488821f5d8acc9ea72e73bd64cde1.setContent(html_98db71cfbfe32b36d2ae9589ab4bfa04);
+            
+        
+
+        circle_marker_d96420df03cefa3ea0091407df4d1bfb.bindPopup(popup_d37488821f5d8acc9ea72e73bd64cde1)
+        ;
+
+        
+    
+    
+            circle_marker_d96420df03cefa3ea0091407df4d1bfb.bindTooltip(
+                `<div>
+                     School 1031692289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ccfd89d5562fe03767b2ad2c4c16f87 = L.circleMarker(
+                [9.9290495, 78.0386471],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_d8b5dd8862a0b1e464821845ac6df371 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85a817ff49893b64c8921ccbb4d7975a = $(`<div id="html_85a817ff49893b64c8921ccbb4d7975a" style="width: 100.0%; height: 100.0%;">Name: SBOA School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_d8b5dd8862a0b1e464821845ac6df371.setContent(html_85a817ff49893b64c8921ccbb4d7975a);
+            
+        
+
+        circle_marker_5ccfd89d5562fe03767b2ad2c4c16f87.bindPopup(popup_d8b5dd8862a0b1e464821845ac6df371)
+        ;
+
+        
+    
+    
+            circle_marker_5ccfd89d5562fe03767b2ad2c4c16f87.bindTooltip(
+                `<div>
+                     SBOA School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b6937ba9af38da04ff181f1aab15086 = L.circleMarker(
+                [9.9350885, 78.0586076],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_fb35c7676a7c15304938c39974454b3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51745cf3181f58523e95cff477d3d670 = $(`<div id="html_51745cf3181f58523e95cff477d3d670" style="width: 100.0%; height: 100.0%;">Name: School 1030099606<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_fb35c7676a7c15304938c39974454b3e.setContent(html_51745cf3181f58523e95cff477d3d670);
+            
+        
+
+        circle_marker_8b6937ba9af38da04ff181f1aab15086.bindPopup(popup_fb35c7676a7c15304938c39974454b3e)
+        ;
+
+        
+    
+    
+            circle_marker_8b6937ba9af38da04ff181f1aab15086.bindTooltip(
+                `<div>
+                     School 1030099606
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad2a967b78bf28221428ea456edf2310 = L.circleMarker(
+                [9.9353672, 78.0462195],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_42e850f37fedc4508f9d03779c4b161b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb4a03f5aeccaf8990b3a208fb3f3d36 = $(`<div id="html_cb4a03f5aeccaf8990b3a208fb3f3d36" style="width: 100.0%; height: 100.0%;">Name: Ma. Na. U. Jayaraj Annapackiam Melnilai Palli<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_42e850f37fedc4508f9d03779c4b161b.setContent(html_cb4a03f5aeccaf8990b3a208fb3f3d36);
+            
+        
+
+        circle_marker_ad2a967b78bf28221428ea456edf2310.bindPopup(popup_42e850f37fedc4508f9d03779c4b161b)
+        ;
+
+        
+    
+    
+            circle_marker_ad2a967b78bf28221428ea456edf2310.bindTooltip(
+                `<div>
+                     Ma. Na. U. Jayaraj Annapackiam Melnilai Palli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1c91136513456ca03ee02d4206a270b = L.circleMarker(
+                [9.9064636, 78.146526],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_8a21f6865cc25ac7889681af5bd72fc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_999cd09f201fc0a8283c91268b5f62d3 = $(`<div id="html_999cd09f201fc0a8283c91268b5f62d3" style="width: 100.0%; height: 100.0%;">Name: Sourashtra Girls Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_8a21f6865cc25ac7889681af5bd72fc4.setContent(html_999cd09f201fc0a8283c91268b5f62d3);
+            
+        
+
+        circle_marker_d1c91136513456ca03ee02d4206a270b.bindPopup(popup_8a21f6865cc25ac7889681af5bd72fc4)
+        ;
+
+        
+    
+    
+            circle_marker_d1c91136513456ca03ee02d4206a270b.bindTooltip(
+                `<div>
+                     Sourashtra Girls Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4daa68686c35ae95bc04c498fef2d6d3 = L.circleMarker(
+                [9.9068824, 78.1433993],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_0387a76fe22c6851b02c42e3a7a730e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_991f3a7257fadf36615aee90651573c6 = $(`<div id="html_991f3a7257fadf36615aee90651573c6" style="width: 100.0%; height: 100.0%;">Name: School 4603491701<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_0387a76fe22c6851b02c42e3a7a730e4.setContent(html_991f3a7257fadf36615aee90651573c6);
+            
+        
+
+        circle_marker_4daa68686c35ae95bc04c498fef2d6d3.bindPopup(popup_0387a76fe22c6851b02c42e3a7a730e4)
+        ;
+
+        
+    
+    
+            circle_marker_4daa68686c35ae95bc04c498fef2d6d3.bindTooltip(
+                `<div>
+                     School 4603491701
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8f3251d26367f988aac5813ddc880aa = L.circleMarker(
+                [9.9069329, 78.1446898],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_4a4f431d2499f3adc61600613294581b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f4592dd59ec4ae9be861dc3587bfc76 = $(`<div id="html_2f4592dd59ec4ae9be861dc3587bfc76" style="width: 100.0%; height: 100.0%;">Name: School 1166080730<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_4a4f431d2499f3adc61600613294581b.setContent(html_2f4592dd59ec4ae9be861dc3587bfc76);
+            
+        
+
+        circle_marker_e8f3251d26367f988aac5813ddc880aa.bindPopup(popup_4a4f431d2499f3adc61600613294581b)
+        ;
+
+        
+    
+    
+            circle_marker_e8f3251d26367f988aac5813ddc880aa.bindTooltip(
+                `<div>
+                     School 1166080730
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bac2626a0c38c1a2b22c740fc7aa1ca9 = L.circleMarker(
+                [9.9088028, 78.1481971],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_297fbc13add5167ae5ddbaf134578a8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dec6c1a4b36e9fbf444a25c30be21ac = $(`<div id="html_0dec6c1a4b36e9fbf444a25c30be21ac" style="width: 100.0%; height: 100.0%;">Name: Thiagarajar Nursery and Primary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_297fbc13add5167ae5ddbaf134578a8c.setContent(html_0dec6c1a4b36e9fbf444a25c30be21ac);
+            
+        
+
+        circle_marker_bac2626a0c38c1a2b22c740fc7aa1ca9.bindPopup(popup_297fbc13add5167ae5ddbaf134578a8c)
+        ;
+
+        
+    
+    
+            circle_marker_bac2626a0c38c1a2b22c740fc7aa1ca9.bindTooltip(
+                `<div>
+                     Thiagarajar Nursery and Primary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc792afb0aa2f8bf44b78b3e20af0d9 = L.circleMarker(
+                [9.9097265, 78.1494954],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_00c9106e46979f02a1af554a42ed82fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2929f1297f1bb92a981ed8a7561443b = $(`<div id="html_d2929f1297f1bb92a981ed8a7561443b" style="width: 100.0%; height: 100.0%;">Name: School 4603524292<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_00c9106e46979f02a1af554a42ed82fc.setContent(html_d2929f1297f1bb92a981ed8a7561443b);
+            
+        
+
+        circle_marker_fdc792afb0aa2f8bf44b78b3e20af0d9.bindPopup(popup_00c9106e46979f02a1af554a42ed82fc)
+        ;
+
+        
+    
+    
+            circle_marker_fdc792afb0aa2f8bf44b78b3e20af0d9.bindTooltip(
+                `<div>
+                     School 4603524292
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4a835255241c67b1637076aa52456ea = L.circleMarker(
+                [9.9109923, 78.1465025],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_ef3b1337c24b8576f0541fe8bf4888d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28be769732e40a950eba6d986dbbf01a = $(`<div id="html_28be769732e40a950eba6d986dbbf01a" style="width: 100.0%; height: 100.0%;">Name: School 4603529890<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_ef3b1337c24b8576f0541fe8bf4888d3.setContent(html_28be769732e40a950eba6d986dbbf01a);
+            
+        
+
+        circle_marker_d4a835255241c67b1637076aa52456ea.bindPopup(popup_ef3b1337c24b8576f0541fe8bf4888d3)
+        ;
+
+        
+    
+    
+            circle_marker_d4a835255241c67b1637076aa52456ea.bindTooltip(
+                `<div>
+                     School 4603529890
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6cc0c3919c8e9a451e821199533018a = L.circleMarker(
+                [9.9109999, 78.1440896],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_2029a71f469c1ae8d0e7f2309a62d0e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ca18300d203e0af8dd7cb8ed65e0218 = $(`<div id="html_2ca18300d203e0af8dd7cb8ed65e0218" style="width: 100.0%; height: 100.0%;">Name: VMJ School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_2029a71f469c1ae8d0e7f2309a62d0e4.setContent(html_2ca18300d203e0af8dd7cb8ed65e0218);
+            
+        
+
+        circle_marker_b6cc0c3919c8e9a451e821199533018a.bindPopup(popup_2029a71f469c1ae8d0e7f2309a62d0e4)
+        ;
+
+        
+    
+    
+            circle_marker_b6cc0c3919c8e9a451e821199533018a.bindTooltip(
+                `<div>
+                     VMJ School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9555429816e6e8e75dd82221c5170ba = L.circleMarker(
+                [9.9111082, 78.1412914],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_3d92e5c430196a9f62de6426b5d42ee5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db849c649c32ef8a53ad2742b4083aa5 = $(`<div id="html_db849c649c32ef8a53ad2742b4083aa5" style="width: 100.0%; height: 100.0%;">Name: Amali Matriculation Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_3d92e5c430196a9f62de6426b5d42ee5.setContent(html_db849c649c32ef8a53ad2742b4083aa5);
+            
+        
+
+        circle_marker_a9555429816e6e8e75dd82221c5170ba.bindPopup(popup_3d92e5c430196a9f62de6426b5d42ee5)
+        ;
+
+        
+    
+    
+            circle_marker_a9555429816e6e8e75dd82221c5170ba.bindTooltip(
+                `<div>
+                     Amali Matriculation Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_276fd00305c18979c0bfb3277573da9d = L.circleMarker(
+                [9.9119828, 78.1420385],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_5182697703a5c8269e28f90d91e56eb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b55ebb3f11b8858a8ff3f7bff72ca6fa = $(`<div id="html_b55ebb3f11b8858a8ff3f7bff72ca6fa" style="width: 100.0%; height: 100.0%;">Name: RC Fatima Middle School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_5182697703a5c8269e28f90d91e56eb5.setContent(html_b55ebb3f11b8858a8ff3f7bff72ca6fa);
+            
+        
+
+        circle_marker_276fd00305c18979c0bfb3277573da9d.bindPopup(popup_5182697703a5c8269e28f90d91e56eb5)
+        ;
+
+        
+    
+    
+            circle_marker_276fd00305c18979c0bfb3277573da9d.bindTooltip(
+                `<div>
+                     RC Fatima Middle School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35a80b7bb40acb398326f14ef630a504 = L.circleMarker(
+                [9.9123778, 78.1417048],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_ffc381e04a9f21acf6dc4b3b98f69b01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cd1c36a575a77eb381b8b874b7c5cee = $(`<div id="html_9cd1c36a575a77eb381b8b874b7c5cee" style="width: 100.0%; height: 100.0%;">Name: St. Justin College<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_ffc381e04a9f21acf6dc4b3b98f69b01.setContent(html_9cd1c36a575a77eb381b8b874b7c5cee);
+            
+        
+
+        circle_marker_35a80b7bb40acb398326f14ef630a504.bindPopup(popup_ffc381e04a9f21acf6dc4b3b98f69b01)
+        ;
+
+        
+    
+    
+            circle_marker_35a80b7bb40acb398326f14ef630a504.bindTooltip(
+                `<div>
+                     St. Justin College
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52d7192a8623c1bb15898f3eec72be76 = L.circleMarker(
+                [9.9196714, 78.1578434],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_1ca3692990b733286ec93c07f55cd282 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_570d918064dfe793f52c13704ee8afb3 = $(`<div id="html_570d918064dfe793f52c13704ee8afb3" style="width: 100.0%; height: 100.0%;">Name: School 4792942522<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_1ca3692990b733286ec93c07f55cd282.setContent(html_570d918064dfe793f52c13704ee8afb3);
+            
+        
+
+        circle_marker_52d7192a8623c1bb15898f3eec72be76.bindPopup(popup_1ca3692990b733286ec93c07f55cd282)
+        ;
+
+        
+    
+    
+            circle_marker_52d7192a8623c1bb15898f3eec72be76.bindTooltip(
+                `<div>
+                     School 4792942522
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28da7fc6f4a7d519b195f7be409f8ab7 = L.circleMarker(
+                [9.9202211, 78.1505733],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_ddb6d7cf988715c5a996cf61ce6b54a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_384536d2d6c441270de44717033d6aea = $(`<div id="html_384536d2d6c441270de44717033d6aea" style="width: 100.0%; height: 100.0%;">Name: School 4881692054<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_ddb6d7cf988715c5a996cf61ce6b54a4.setContent(html_384536d2d6c441270de44717033d6aea);
+            
+        
+
+        circle_marker_28da7fc6f4a7d519b195f7be409f8ab7.bindPopup(popup_ddb6d7cf988715c5a996cf61ce6b54a4)
+        ;
+
+        
+    
+    
+            circle_marker_28da7fc6f4a7d519b195f7be409f8ab7.bindTooltip(
+                `<div>
+                     School 4881692054
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_802a138784a38f54bd654b4f69192f37 = L.circleMarker(
+                [9.9257407, 78.1394621],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_7c7bc69c850e95c593490a07e5979f6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5895bf9cbb77a92d1631269398f2af22 = $(`<div id="html_5895bf9cbb77a92d1631269398f2af22" style="width: 100.0%; height: 100.0%;">Name: MAVMM Matriculation School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_7c7bc69c850e95c593490a07e5979f6a.setContent(html_5895bf9cbb77a92d1631269398f2af22);
+            
+        
+
+        circle_marker_802a138784a38f54bd654b4f69192f37.bindPopup(popup_7c7bc69c850e95c593490a07e5979f6a)
+        ;
+
+        
+    
+    
+            circle_marker_802a138784a38f54bd654b4f69192f37.bindTooltip(
+                `<div>
+                     MAVMM Matriculation School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21b9df30bc3968a82d905a5e1a3829d2 = L.circleMarker(
+                [9.9339192, 78.1468939],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_4f4dd5f7fdc1d42b4e1ea6ed86f206ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c469bd291b7fe2c4c1a16f9a9da70be = $(`<div id="html_4c469bd291b7fe2c4c1a16f9a9da70be" style="width: 100.0%; height: 100.0%;">Name: Mahatma Montessori Matriculation Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_4f4dd5f7fdc1d42b4e1ea6ed86f206ac.setContent(html_4c469bd291b7fe2c4c1a16f9a9da70be);
+            
+        
+
+        circle_marker_21b9df30bc3968a82d905a5e1a3829d2.bindPopup(popup_4f4dd5f7fdc1d42b4e1ea6ed86f206ac)
+        ;
+
+        
+    
+    
+            circle_marker_21b9df30bc3968a82d905a5e1a3829d2.bindTooltip(
+                `<div>
+                     Mahatma Montessori Matriculation Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c089d847be5b33bd996945020c141b39 = L.circleMarker(
+                [9.9351831, 78.1401469],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_3e60cac7767c31b6f741d906373a47cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83464111da1516f31b96df5d1cd8bbc3 = $(`<div id="html_83464111da1516f31b96df5d1cd8bbc3" style="width: 100.0%; height: 100.0%;">Name: School 5495422321<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_3e60cac7767c31b6f741d906373a47cf.setContent(html_83464111da1516f31b96df5d1cd8bbc3);
+            
+        
+
+        circle_marker_c089d847be5b33bd996945020c141b39.bindPopup(popup_3e60cac7767c31b6f741d906373a47cf)
+        ;
+
+        
+    
+    
+            circle_marker_c089d847be5b33bd996945020c141b39.bindTooltip(
+                `<div>
+                     School 5495422321
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34ea5d278279b9485677de488751b2fe = L.circleMarker(
+                [9.9384434, 78.137016],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_167c48291f33c592875538cb90c52486 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16e61e2e9828396517f69e663ccadbed = $(`<div id="html_16e61e2e9828396517f69e663ccadbed" style="width: 100.0%; height: 100.0%;">Name: Le Chatelier Melnilai Palli<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_167c48291f33c592875538cb90c52486.setContent(html_16e61e2e9828396517f69e663ccadbed);
+            
+        
+
+        circle_marker_34ea5d278279b9485677de488751b2fe.bindPopup(popup_167c48291f33c592875538cb90c52486)
+        ;
+
+        
+    
+    
+            circle_marker_34ea5d278279b9485677de488751b2fe.bindTooltip(
+                `<div>
+                     Le Chatelier Melnilai Palli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33ae614404094b0c0915ae98cc96e0a5 = L.circleMarker(
+                [9.9359849, 78.041741],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_9a9328e62161d3b61a53893398254f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_869077824e7eb771cf566cdb51306fea = $(`<div id="html_869077824e7eb771cf566cdb51306fea" style="width: 100.0%; height: 100.0%;">Name: Na. Ma. Sa. Vijayalakshmi Sanjeevimalayan Kalviyagam<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_9a9328e62161d3b61a53893398254f9b.setContent(html_869077824e7eb771cf566cdb51306fea);
+            
+        
+
+        circle_marker_33ae614404094b0c0915ae98cc96e0a5.bindPopup(popup_9a9328e62161d3b61a53893398254f9b)
+        ;
+
+        
+    
+    
+            circle_marker_33ae614404094b0c0915ae98cc96e0a5.bindTooltip(
+                `<div>
+                     Na. Ma. Sa. Vijayalakshmi Sanjeevimalayan Kalviyagam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_302607918f2724e50c626c7a06daa272 = L.circleMarker(
+                [9.9361038, 78.0477298],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_0591b259655a4ae02771674ba86d4a9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f9e6e85cc4388ae6b9b98bbd0ee707b = $(`<div id="html_1f9e6e85cc4388ae6b9b98bbd0ee707b" style="width: 100.0%; height: 100.0%;">Name: Ma. Na. U. Jayaraj Nadar Melnilai Palli<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_0591b259655a4ae02771674ba86d4a9b.setContent(html_1f9e6e85cc4388ae6b9b98bbd0ee707b);
+            
+        
+
+        circle_marker_302607918f2724e50c626c7a06daa272.bindPopup(popup_0591b259655a4ae02771674ba86d4a9b)
+        ;
+
+        
+    
+    
+            circle_marker_302607918f2724e50c626c7a06daa272.bindTooltip(
+                `<div>
+                     Ma. Na. U. Jayaraj Nadar Melnilai Palli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_371e92d3b67ee78fb135ad1aee4743d4 = L.circleMarker(
+                [9.9365768, 78.0592384],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_0631b34c860d9828afebfda66c232627 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2b2250d99d2226c80324a2f8397d6cc = $(`<div id="html_b2b2250d99d2226c80324a2f8397d6cc" style="width: 100.0%; height: 100.0%;">Name: School 1030099605<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_0631b34c860d9828afebfda66c232627.setContent(html_b2b2250d99d2226c80324a2f8397d6cc);
+            
+        
+
+        circle_marker_371e92d3b67ee78fb135ad1aee4743d4.bindPopup(popup_0631b34c860d9828afebfda66c232627)
+        ;
+
+        
+    
+    
+            circle_marker_371e92d3b67ee78fb135ad1aee4743d4.bindTooltip(
+                `<div>
+                     School 1030099605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e77a1941dd54eae8f77c3e5a9476941 = L.circleMarker(
+                [9.93715, 78.0808646],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_2de3fbff1e62ddb3ba1db1f6fca83eec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2549bc0ed2493209142ad50cf22ca0e5 = $(`<div id="html_2549bc0ed2493209142ad50cf22ca0e5" style="width: 100.0%; height: 100.0%;">Name: School 1057578522<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_2de3fbff1e62ddb3ba1db1f6fca83eec.setContent(html_2549bc0ed2493209142ad50cf22ca0e5);
+            
+        
+
+        circle_marker_2e77a1941dd54eae8f77c3e5a9476941.bindPopup(popup_2de3fbff1e62ddb3ba1db1f6fca83eec)
+        ;
+
+        
+    
+    
+            circle_marker_2e77a1941dd54eae8f77c3e5a9476941.bindTooltip(
+                `<div>
+                     School 1057578522
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7b93f52411011678d1e18c8b7014185 = L.circleMarker(
+                [9.9378163, 78.0871129],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_c68c7adca6d90a5d575101a03fdc025b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e54ac39f9ecb95214b2f84d8ff5f62ae = $(`<div id="html_e54ac39f9ecb95214b2f84d8ff5f62ae" style="width: 100.0%; height: 100.0%;">Name: St. John's Higher Secondary School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_c68c7adca6d90a5d575101a03fdc025b.setContent(html_e54ac39f9ecb95214b2f84d8ff5f62ae);
+            
+        
+
+        circle_marker_f7b93f52411011678d1e18c8b7014185.bindPopup(popup_c68c7adca6d90a5d575101a03fdc025b)
+        ;
+
+        
+    
+    
+            circle_marker_f7b93f52411011678d1e18c8b7014185.bindTooltip(
+                `<div>
+                     St. John's Higher Secondary School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c65afa411778f6a2088cec41b8e178b = L.circleMarker(
+                [9.9491716, 78.0695506],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_a9b2553fabbbd8b93bb50e28eda33583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcd8568a6214225c2cb6fc8df29f23fd = $(`<div id="html_bcd8568a6214225c2cb6fc8df29f23fd" style="width: 100.0%; height: 100.0%;">Name: School 990848654<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_a9b2553fabbbd8b93bb50e28eda33583.setContent(html_bcd8568a6214225c2cb6fc8df29f23fd);
+            
+        
+
+        circle_marker_4c65afa411778f6a2088cec41b8e178b.bindPopup(popup_a9b2553fabbbd8b93bb50e28eda33583)
+        ;
+
+        
+    
+    
+            circle_marker_4c65afa411778f6a2088cec41b8e178b.bindTooltip(
+                `<div>
+                     School 990848654
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e36ee912ec8d0c0af4c8e7f7fb0c304 = L.circleMarker(
+                [9.9322975, 78.1352427],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_fd45a2f4dd985f9a0ff48a6dc883f341 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec7fe246f0a21464b89e25d5a29231ad = $(`<div id="html_ec7fe246f0a21464b89e25d5a29231ad" style="width: 100.0%; height: 100.0%;">Name: School 1027089046<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_fd45a2f4dd985f9a0ff48a6dc883f341.setContent(html_ec7fe246f0a21464b89e25d5a29231ad);
+            
+        
+
+        circle_marker_4e36ee912ec8d0c0af4c8e7f7fb0c304.bindPopup(popup_fd45a2f4dd985f9a0ff48a6dc883f341)
+        ;
+
+        
+    
+    
+            circle_marker_4e36ee912ec8d0c0af4c8e7f7fb0c304.bindTooltip(
+                `<div>
+                     School 1027089046
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2815bcaae2eb8f840eb2a6c70ccffda9 = L.circleMarker(
+                [9.9496045, 78.1308994],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_1f082f073c93588577c7c0dabbb3f6d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd605adddc79dee74fe75176a254ad22 = $(`<div id="html_dd605adddc79dee74fe75176a254ad22" style="width: 100.0%; height: 100.0%;">Name: YMCA Kamak school for the hearing impaired<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_1f082f073c93588577c7c0dabbb3f6d8.setContent(html_dd605adddc79dee74fe75176a254ad22);
+            
+        
+
+        circle_marker_2815bcaae2eb8f840eb2a6c70ccffda9.bindPopup(popup_1f082f073c93588577c7c0dabbb3f6d8)
+        ;
+
+        
+    
+    
+            circle_marker_2815bcaae2eb8f840eb2a6c70ccffda9.bindTooltip(
+                `<div>
+                     YMCA Kamak school for the hearing impaired
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4cb6e594cb7c5cf44358d3d885f4e0df = L.circleMarker(
+                [9.9496045, 78.1308994],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_b336980a6e1587bea543d56d1996fd91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5eb69f74bad7fbd1ce8c41f6c088a24 = $(`<div id="html_d5eb69f74bad7fbd1ce8c41f6c088a24" style="width: 100.0%; height: 100.0%;">Name: YMCA Kamak school for the hearing impaired<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_b336980a6e1587bea543d56d1996fd91.setContent(html_d5eb69f74bad7fbd1ce8c41f6c088a24);
+            
+        
+
+        circle_marker_4cb6e594cb7c5cf44358d3d885f4e0df.bindPopup(popup_b336980a6e1587bea543d56d1996fd91)
+        ;
+
+        
+    
+    
+            circle_marker_4cb6e594cb7c5cf44358d3d885f4e0df.bindTooltip(
+                `<div>
+                     YMCA Kamak school for the hearing impaired
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9eaa2fb2790e809f5042eee0d86b845d = L.circleMarker(
+                [9.9539078, 78.1288792],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_7d72883902ef88987ba08b2110588c5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f83f043095081fb672046507c8809dc = $(`<div id="html_0f83f043095081fb672046507c8809dc" style="width: 100.0%; height: 100.0%;">Name: Balamandiram School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_7d72883902ef88987ba08b2110588c5c.setContent(html_0f83f043095081fb672046507c8809dc);
+            
+        
+
+        circle_marker_9eaa2fb2790e809f5042eee0d86b845d.bindPopup(popup_7d72883902ef88987ba08b2110588c5c)
+        ;
+
+        
+    
+    
+            circle_marker_9eaa2fb2790e809f5042eee0d86b845d.bindTooltip(
+                `<div>
+                     Balamandiram School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bed1d7a0a57a96625947ba5ca28da9a = L.circleMarker(
+                [9.9577464, 78.1359185],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_a61c4432c454f785cb77516c531da75b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56d0460da98d319fa1b4f975e7aa3a0c = $(`<div id="html_56d0460da98d319fa1b4f975e7aa3a0c" style="width: 100.0%; height: 100.0%;">Name: School 4519221790<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_a61c4432c454f785cb77516c531da75b.setContent(html_56d0460da98d319fa1b4f975e7aa3a0c);
+            
+        
+
+        circle_marker_4bed1d7a0a57a96625947ba5ca28da9a.bindPopup(popup_a61c4432c454f785cb77516c531da75b)
+        ;
+
+        
+    
+    
+            circle_marker_4bed1d7a0a57a96625947ba5ca28da9a.bindTooltip(
+                `<div>
+                     School 4519221790
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b7ab1cb9bad18a4dbe838085047aeb5 = L.circleMarker(
+                [10.0064309, 78.1334889],
+                {"bubblingMouseEvents": true, "color": "#0f766e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2dd4bf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e500f689f35be819ff07c61760ca69c9);
+        
+    
+        var popup_39b2eb4c5dd8f0e61728ae59809bd698 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad25ef81acf6e59c1a92bcf31099018c = $(`<div id="html_ad25ef81acf6e59c1a92bcf31099018c" style="width: 100.0%; height: 100.0%;">Name: Vikaasa World School<br>Category: school<br>Entity: school<br>District: Madurai</div>`)[0];
+                popup_39b2eb4c5dd8f0e61728ae59809bd698.setContent(html_ad25ef81acf6e59c1a92bcf31099018c);
+            
+        
+
+        circle_marker_7b7ab1cb9bad18a4dbe838085047aeb5.bindPopup(popup_39b2eb4c5dd8f0e61728ae59809bd698)
+        ;
+
+        
+    
+    
+            circle_marker_7b7ab1cb9bad18a4dbe838085047aeb5.bindTooltip(
+                `<div>
+                     Vikaasa World School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_e500f689f35be819ff07c61760ca69c9.addTo(map_80b85896289b7754839cdbbfdf888332);
+        
+    
+            var layer_control_518553964a4157c06adaf856f14c4fdb_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_4fc0a04fb6b2b0ceeabc6162cf5f90f1,
+                },
+                overlays :  {
+                    "Tamil Nadu Boundary" : geo_json_3911a7055c68c1e4e76abdf43793c0c8,
+                    "District Boundaries" : geo_json_9e22c217a3e67391ae0df88bc4b35051,
+                    "School Results" : marker_cluster_e500f689f35be819ff07c61760ca69c9,
+                },
+            };
+            let layer_control_518553964a4157c06adaf856f14c4fdb = L.control.layers(
+                layer_control_518553964a4157c06adaf856f14c4fdb_layers.base_layers,
+                layer_control_518553964a4157c06adaf856f14c4fdb_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_80b85896289b7754839cdbbfdf888332);
+
+        
+</script>
+</html>
